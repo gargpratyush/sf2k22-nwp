@@ -105,6 +105,7 @@
   background-color: #080e1c;
     opacity: 0.77;
 }
+
 .desktop_grid_child:hover{
   cursor: pointer;
   color: yellow;
@@ -545,5 +546,11 @@ stroke: black;
   .grid_child{
     width: 15rem;
     font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 913px) and (max-width: 1320px) {
+  .desktop_grid_child{
+    display:none;
   }
 }

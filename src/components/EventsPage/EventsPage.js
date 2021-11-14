@@ -170,7 +170,7 @@ function EventsPage(city) {
          backgroundRepeat: "no-repeat"}}>
 
         <div className="city-desc">
-          <h1>
+          <h1 style={{fontFamily:'MediumFont'}}>
             {city.city.name}
           </h1>
           <p>
@@ -189,7 +189,7 @@ function EventsPage(city) {
                 city.setEvent(dataevents[2]);
               }} >
               <img src={EnglishPoetry} alt="English Poetry Slam" />
-              <p>English Poetry Slam</p>
+              <p style={{fontFamily:'RegularFont'}}>English Poetry Slam</p>
             </Link>
           </div>
 
@@ -199,7 +199,7 @@ function EventsPage(city) {
               textDecoration: "none"
             }}>
               <img src={notes} alt="Notes Less Travelled" />
-              <p>Notes Less Travelled</p>
+              <p style={{fontFamily:'RegularFont'}}>Notes Less Travelled</p>
             </Link>
           </div>
 
@@ -209,7 +209,7 @@ function EventsPage(city) {
               textDecoration: "none"
             }}>
               <img src={SFIdol} alt="SF Idol" />
-              <p>SF Idol</p>
+              <p style={{fontFamily:'RegularFont'}}>SF Idol</p>
             </Link>
           </div>
 
@@ -219,7 +219,7 @@ function EventsPage(city) {
               textDecoration: "none"
             }}>
               <img src={Nrityakala} alt="Nrityakala" />
-              <p>Nrityakala</p>
+              <p style={{fontFamily:'RegularFont'}}>Nrityakala</p>
             </Link>
           </div>
 
@@ -229,7 +229,7 @@ function EventsPage(city) {
               textDecoration: "none"
             }}>
               <img src={IMeMyself} alt="I Me Myself" />
-              <p>I Me Myself</p>
+              <p style={{fontFamily:'RegularFont'}}>I Me Myself</p>
             </Link>
           </div>
 
@@ -239,7 +239,7 @@ function EventsPage(city) {
               textDecoration: "none"
             }}>
               <img src={PictureTale} alt="Picture Tale" />
-              <p>A Picture Tale</p>
+              <p style={{fontFamily:'RegularFont'}}>A Picture Tale</p>
             </Link>
           </div>
 
@@ -249,7 +249,7 @@ function EventsPage(city) {
               textDecoration: "none"
             }}>
               <img src={HindiPoetry} alt="Hindi Poetry" />
-              <p>Hindi Poetry Slam</p>
+              <p style={{fontFamily:'RegularFont'}}>Hindi Poetry Slam</p>
             </Link>
           </div>
 
@@ -259,7 +259,7 @@ function EventsPage(city) {
               textDecoration: "none"
             }}>
               <img src={Tango} alt="Two for A Tango" />
-              <p>Two for A Tango</p>
+              <p style={{fontFamily:'RegularFont'}}>Two for A Tango</p>
             </Link>
           </div>
 
@@ -269,7 +269,7 @@ function EventsPage(city) {
               textDecoration: "none"
             }}>
               <img src={ShakeLeg} alt="Shake A Leg" />
-              <p>Shake A Leg</p>
+              <p style={{fontFamily:'RegularFont'}}>Shake A Leg</p>
             </Link>
           </div>
 
@@ -289,7 +289,7 @@ function EventsPage(city) {
               textDecoration: "none"
             }}>
               <img src={Panache} alt="Panache" />
-              <p>Panache</p>
+              <p style={{fontFamily:'RegularFont'}}>Panache</p>
             </Link>
           </div>
 

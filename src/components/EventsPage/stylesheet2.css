@@ -1,16 +1,16 @@
 @font-face {
-  font-family: poppins;
-  src: url(Font/Poppins-Medium.ttf);
+  font-family: MediumFont !important;
+  src: url("Font/Poppins-Medium.ttf");
   font-weight: bolder;
 }
 @font-face {
   font-family: poppins;
-  src: url(Font/Poppins-Thin.ttf);
+  src: url("Font/Poppins-Thin.ttf");
   font-weight: thin;
 }
 @font-face {
-  font-family: poppins;
-  src: url(Font/Poppins-Regular.ttf);
+  font-family: RegularFont !important;
+  src: url("Font/Poppins-Regular.ttf");
   font-weight: normal;
 }
 
