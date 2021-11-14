@@ -123,7 +123,7 @@
 // }
 
 // export default EventsPage
-import React from 'react'
+import React, {useRef} from 'react'
 import './stylesheet2.css'
 import { Link } from 'react-router-dom'
 import EnglishPoetry from './Events_Cards/EnglishPoetry.png'
@@ -147,10 +147,27 @@ import {faArrowCircleLeft} from '@fortawesome/free-solid-svg-icons';
 
 function EventsPage(city) {
 
+  
+  const onWheel = e => {
+    e.preventDefault();
+    const container = scrollRef.current;
+    const containerScrollPosition = scrollRef.current.scrollLeft;
+
+    container.scrollTo({
+      top: 0,
+      left: containerScrollPosition + e.deltaY,
+    });
+  };
+
+  const scrollRef = useRef(null);
+
   return (
-    <div className="external">
+    <div className="external"  
+    ref={scrollRef}
+    onWheel={onWheel}>
       <div className="horizontal-scroll-wrapper"
-        style={{ background: `url(${mainBg}), url(${city.city.imagebg}), url(${blueBg}`, backgroundSize: "auto 100%" }}>
+        style={{ background: `url(${mainBg}), url(${city.city.imagebg}), url(${blueBg}`, backgroundSize: "",
+         backgroundRepeat: "no-repeat"}}>
 
         <div className="city-desc">
           <h1>
@@ -278,7 +295,7 @@ function EventsPage(city) {
 
         </div>
       </div>
-      <div className="logo"><img href="google.com" src={SFLogo} alt="Spring Fest Logo" />Try scrolling←</div>
+      <div className="scroll-instruction">Try scrolling←</div>
       <div className="back-btn"><Link to="/" style={{color: "white"}}><FontAwesomeIcon icon={faArrowCircleLeft} ></FontAwesomeIcon></Link></div>
     </div>
   )
