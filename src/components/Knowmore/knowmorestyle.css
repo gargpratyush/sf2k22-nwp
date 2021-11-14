@@ -1,0 +1,60 @@
+.Know-more-page{
+    background-image:url('nwp_map_bg.png');
+    /* background-color: brown; */
+    background-size:contain;
+    height:95vh;
+    background-repeat: no-repeat;
+}
+.knowmore-info-container{
+    padding-top:30px;
+}
+@font-face{
+    font-family: 'Courier New', Courier, monospace;
+    /* src:url(./Poppins-Bold.ttf); */
+  }
+  @font-face{
+    font-family: 'Courier New', Courier, monospace;
+    /* src:url(./Poppins-Regular.ttf); */
+  }
+.knowmore-info-container-heading{
+    /* font-family:Poppins-Bold; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size:40px;
+    color:white;
+    text-shadow: 0 0 30px rgb(166, 243, 248);
+    margin-left:25px;
+}
+.knowmore-info-container-image img{
+    width:260px;
+    height:auto;
+}
+.knowmore-flexbox{
+    display:flex;
+    margin-left:130px;
+    border:6px solid white;
+    width:1220px;
+    padding:30px;
+    border-radius:50px;
+}
+.knowmore-info-container-description{
+    color:rgb(219, 216, 216);
+    font-family: 'Courier New', Courier, monospace;
+    font-size:15px;
+    text-align:left;
+    margin-left:50px;
+}
+@media screen and (max-width:600px){
+    .Know-more-page{
+        height:fit-content;
+        background-size:cover;
+    }
+    .knowmore-flexbox{
+        flex-direction:column;
+        margin-left:20px;
+        width:320px;
+    }
+    .knowmore-info-container-description{
+        margin-left:25px;
+        margin-top:15px;
+    }
+}

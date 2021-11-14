@@ -1,0 +1,36 @@
+
+
+{
+    "cities" : [
+        {
+            "id": 1,
+            "name": "New Delhi",
+            "image": "./images/delhi.jpg",
+            "tag": "India Gate",
+            "pinx": "31.2%",
+            "piny": "28.083%",
+            "cardx": "31.2%",
+            "cardy": "4.083%"  
+        },
+        {
+            "id": 2,
+            "name": "Mumbai",
+            "image": "./images/mumbai.jpg",
+            "tag": "Gateway of India",
+            "pinx": "15.8%",
+            "piny": "58.333333%",
+            "cardx": "15.8%",
+            "cardy": "34.333333%"  
+        },
+        {
+            "id": 3,
+            "name": "",
+            "image": "./Images/.jpg",
+            "tag": "",
+            "pinx": "",
+            "piny": "",
+            "cardx": "",
+            "cardy": ""  
+        }
+    ]
+}

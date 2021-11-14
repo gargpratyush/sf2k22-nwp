@@ -1,0 +1,11 @@
+
+
+.cities {
+    /* background-image: url(nwp_map_bg.png); */
+    background-color: rgb(8, 14, 28);
+    /* background-size: cover; */
+    /* border: solid 10px red; */
+    /* background-position: ; */
+    overflow-y: scroll;
+
+}

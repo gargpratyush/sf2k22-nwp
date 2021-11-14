@@ -1,0 +1,21 @@
+/*div > h2 {
+  font-size: 150%;
+  text-align: center;
+  text-decoration: cadetblue underline;
+  margin: 10px auto;
+}*/
+@import "../About/about.scss";
+
+.padd {
+  margin-right: 10px;
+}
+
+.container1 {
+  ul {
+    padding: 10px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}

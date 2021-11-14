@@ -1,0 +1,184 @@
+/*div > h2 {
+  font-size: 150%;
+  text-align: center;
+  text-decoration: cadetblue underline;
+  margin: 10px auto;
+}*/
+.content-box {
+  position: relative;
+  left: 20%;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2326309f;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-box h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.content-box p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.effect-h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.effect-h1 .hover {
+  text-align: start;
+  padding: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.effect-h1 .hover:before, .effect-h1 .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  opacity: 0;
+  background-color: #ff2424;
+}
+
+.effect-h1 .hover.hover-1:before {
+  left: 50%;
+}
+
+.effect-h1 .hover.hover-1:after {
+  right: 50%;
+}
+
+.effect-h1:hover {
+  cursor: pointer;
+}
+
+.effect-h1:hover .hover:before, .effect-h1:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.effect-h1:hover .hover.hover-1:before, .effect-h1:hover .hover.hover-1:after {
+  width: 50%;
+}
+
+.content-box {
+ 
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.content-box:hover {
+  
+  -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.2) !important;
+  color: white !important;
+}
+
+.padd {
+  margin-right: 10px;
+}
+
+.container1 ul {
+  padding: 10px;
+}
+
+.container1 ul li {
+  margin-bottom: 10px;
+}
+
+.submit-tab::before {
+  content: "abc";
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1100px){
+  .content-box {
+    left: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .content-box {
+    width: 70%;
+    padding: 20px;
+    left: 15%;
+  }
+}
+
+@media only screen and (max-width: 610px){
+  .content-box {
+    width: 70%;
+    padding: 10px;
+    left: 10%;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .content-box{
+    width: 55%;
+    padding: 10px;
+    left: 5%;
+  }
+}
+
+
+@media only screen and (max-width: 460px){
+  .content-box {
+    width: 50%;
+    padding: 10px;
+    left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .content-box {
+    width: 45%;
+    padding: 15px;
+    left: 3rem;
+  }
+  .content-box h1{
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .content-box {
+    width: 40%;
+    padding: 15px;
+    left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 315px){
+  .content-box {
+    width: 35%;
+    padding: 15px;
+    left: 2rem;
+  }
+}
+/*# sourceMappingURL=judgement.css.map */

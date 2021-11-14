@@ -1,0 +1,234 @@
+/*div > h2 {
+  font-size: 150%;
+  text-align: center;
+  text-decoration: cadetblue underline;
+  margin: 10px auto;
+}*/
+.profile-card {
+  padding-bottom: 2rem;
+  border-radius: 0.3rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0.7rem 2.9rem 0px;
+  margin: 2rem;
+}
+
+.profile-card-heading {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+
+.profile-sf-id {
+  max-width: fit-content;
+  margin-left: 1rem;
+  border: 0.1rem solid whitesmoke;
+  border-radius: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  margin: 0 1rem;
+}
+
+.profile-card-college {
+  width: 15rem;
+  padding-top: 0.5rem;
+  font-size: small;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.profile-card-text {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.profile-card-text-title {
+  padding-right: 1rem;
+  margin-left: 1rem;
+}
+
+.p-content-box {
+  position: relative;
+  left: 2%;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2326309f;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+          margin-top: 0;
+}
+
+.p-content-box h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.p-content-box p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.p-effect-h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-effect-h1 .p-hover {
+  text-align: start;
+  padding: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.p-effect-h1 .p-hover:before, .p-effect-h1 .p-hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  opacity: 0;
+  background-color: #ff2424;
+}
+
+.p-effect-h1 .p-hover.p-hover-1:before {
+  left: 50%;
+}
+
+.p-effect-h1 .p-hover.p-hover-1:after {
+  right: 50%;
+}
+
+.p-effect-h1:hover {
+  cursor: pointer;
+}
+
+.p-effect-h1:hover .p-hover:before, .p-effect-h1:hover .p-hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.p-effect-h1:hover .p-hover.p-hover-1:before, .p-effect-h1:hover .p-hover.p-hover-1:after {
+  width: 50%;
+}
+
+.p-content-box {
+ 
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+}
+
+.p-content-box:hover {
+  
+  -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.2) !important;
+  color: white !important;
+}
+
+.p-padd {
+  margin-right: 10px;
+}
+
+.p-container1 ul {
+  padding: 10px;
+}
+
+.p-container1 ul li {
+  margin-bottom: 10px;
+}
+
+.p-submit-tab::before {
+  content: "abc";
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1100px){
+  .p-content-box {
+    left: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .p-content-box {
+    width: 70%;
+    padding: 20px;
+    left: 15%;
+  }
+}
+
+@media only screen and (max-width: 610px){
+  .p-content-box {
+    width: 70%;
+    padding: 10px;
+    left: 10%;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .p-content-box{
+    width: 75%;
+    padding: 10px;
+    left: 5%;
+  }
+}
+
+
+@media only screen and (max-width: 460px){
+  .p-content-box {
+    width: 70%;
+    padding: 10px;
+    left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .p-content-box {
+    width: 75%;
+    padding: 15px;
+    left: 3rem;
+  }
+  .p-content-box h1{
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .p-content-box {
+    width: 70%;
+    padding: 15px;
+    left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 315px){
+  .p-content-box {
+    width: 70%;
+    padding: 15px;
+    left: 2rem;
+  }
+}
+/*# sourceMappingURL=judgement.css.map */

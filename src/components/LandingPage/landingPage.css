@@ -1,0 +1,813 @@
+.landing-page{
+    background-image: url('./background\(1\).png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-right: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .hitch-hike-txt{
+    height: 7rem;
+    width: auto;
+    margin-top: 8rem;
+    margin-left: 6rem;
+    z-index: 10;
+} */
+.hitch-hike-txt{
+    height: 20%;
+    width: 40%;
+    left: 33%;
+    top: 10%;
+    z-index: 11;
+    transform: scale(0.9);
+    position: absolute;
+    animation: fadeInUp 5s;
+    transition: all .2s ease-in-out; 
+    
+}
+@media screen and (min-width: 1000px ){
+    .hitch-hike-txt:hover {
+        transform: scale(1.01);
+        
+    }
+}
+
+
+
+.landing_page_unicorn{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    position: absolute;
+    /* animation: fadeIn 4s; */
+    transition: all .2s ease-in-out; 
+    
+
+}
+
+
+
+.landing_page_grass{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 6;
+    position: absolute;
+    animation: fadeIn 5s;
+}
+.landing_page_woman{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 5;
+    position: absolute;
+    animation: fadeIn 7s;
+}
+
+.landing_page_tree1{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    position: absolute;
+    animation: fadeIn 10s;
+}
+
+.landing_page_tree2{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    position: absolute;
+    animation: fadeIn 10s;
+}
+
+.landing_page_tree3{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    position: absolute;
+    animation: fadeIn 10s;
+}
+
+.landing_page_tree4{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    position: absolute;
+    animation: fadeIn 10s;
+}
+
+.landing_page_tree5{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    position: absolute;
+    animation: fadeIn 10s;
+}
+
+.landing_page_tree6{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    position: absolute;
+    animation: fadeIn 10s;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .hitch-hike-txt{
+        height: 20%;
+        width: 47%;
+        left: 30%;
+        top: 10%;
+        transform: scale(0.9);
+        z-index: 11;
+        position: absolute;
+    }
+    
+.landing_page_tree3{
+    height: 50%;
+    width: 90%;
+    left: 0%;
+    top: 0%;
+    z-index: 3;
+    position: absolute;
+}
+}
+@media screen and (max-width: 650px){
+    .hitch-hike-txt{
+        height: 20%;
+        width: 90%;
+        left: 12%;
+        top: 10%;
+        z-index: 11;
+        transform: scale(0.9);
+        position: absolute;
+        animation: fadeInUp 5s;
+    }
+    .landing_page_unicorn{
+        height: 80%;
+        width: 140%;
+        left: -25%;
+        top: 20%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 4s;
+    }
+    .landing_page_grass{
+        height: 80%;
+        width: 100%;
+        left: 0%;
+        top: 22%;
+        z-index: 6;
+        position: absolute;
+        animation: fadeIn 5s;
+    }
+    .landing_page_woman{
+        height: 80%;
+        width: 100%;
+        left: 0%;
+        top: 22%;
+        z-index: 5;
+        position: absolute;
+        animation: fadeIn 7s;
+    }
+    
+    .landing_page_tree1{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree2{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree3{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree4{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree5{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree6{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+} 
+
+
+@media screen and (max-width: 525px){
+    .hitch-hike-txt{
+        height: 20%;
+        width: 75%;
+        left: 14%;
+        top: 10%;
+        z-index: 11;
+        transform: scale(0.9);
+        position: absolute;
+        animation: fadeInUp 5s;
+    }
+    .landing_page_unicorn{
+        height: 80%;
+        width: 140%;
+        left: -27%;
+        top: 17%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 4s;
+    }
+    .landing_page_grass{
+        height: 80%;
+        width: 100%;
+        left: 0%;
+        top: 22%;
+        z-index: 6;
+        position: absolute;
+        animation: fadeIn 5s;
+    }
+    .landing_page_woman{
+        height: 80%;
+        width: 100%;
+        left: 0%;
+        top: 22%;
+        z-index: 5;
+        position: absolute;
+        animation: fadeIn 7s;
+    }
+    
+    .landing_page_tree1{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree2{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree3{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree4{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree5{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree6{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+} 
+@media screen and (max-width: 480px){
+    .hitch-hike-txt{
+        height: 16%;
+        width: 85%;
+        left: 16%;
+        top: 10%;
+        transform: scale(0.9);
+        z-index: 11;
+        position: absolute;
+        animation: fadeInUp 5s;
+    }
+    .landing_page_unicorn{
+        height: 80%;
+        width: 150%;
+        left: -27%;
+        top: 20%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 4s;
+    }
+    .landing_page_grass{
+        height: 80%;
+        width: 100%;
+        left: 0%;
+        top: 22%;
+        z-index: 6;
+        position: absolute;
+        animation: fadeIn 5s;
+    }
+    .landing_page_woman{
+        height: 80%;
+        width: 100%;
+        left: 0%;
+        top: 20%;
+        z-index: 5;
+        position: absolute;
+        animation: fadeIn 7s;
+    }
+    
+    .landing_page_tree1{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree2{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree3{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree4{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree5{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree6{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+} 
+
+
+@media screen and (max-width: 400px){
+    .hitch-hike-txt{
+        height: 18%;
+        width: 97%;
+        left: 10%;
+        transform: scale(0.9);
+        top: 17%;
+        z-index: 11;
+        position: absolute;
+        animation: fadeInUp 5s;
+    }
+    .landing_page_unicorn{
+        height: 82%;
+        width: 130%;
+        left: -18%;
+        top: 20%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 4s;
+    }
+    .landing_page_grass{
+        height: 80%;
+        width: 100%;
+        left: 0%;
+        top: 22%;
+        z-index: 6;
+        position: absolute;
+        animation: fadeIn 5s;
+    }
+    .landing_page_woman{
+        height: 75%;
+        width: 140%;
+        left: 0%;
+        top: 28%;
+        z-index: 5;
+        position: absolute;
+        animation: fadeIn 7s;
+    }
+    
+    .landing_page_tree1{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree2{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree3{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree4{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree5{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree6{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 360px){
+    .hitch-hike-txt{
+        height: 18%;
+        width: 87%;
+        left: 15%;
+        transform: scale(0.9);
+        top: 17%;
+        z-index: 11;
+        position: absolute;
+        animation: fadeInUp 5s;
+    }
+    .landing_page_unicorn{
+        height: 75%;
+        width: 100%;
+        left: 0%;
+        top: 27%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 4s;
+    }
+    .landing_page_grass{
+        height: 80%;
+        width: 100%;
+        left: 0%;
+        top: 22%;
+        z-index: 6;
+        position: absolute;
+        animation: fadeIn 5s;
+    }
+    .landing_page_woman{
+        height: 72%;
+        width: 100%;
+        left: 0%;
+        top: 29%;
+        z-index: 5;
+        position: absolute;
+        animation: fadeIn 7s;
+    }
+    
+    .landing_page_tree1{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree2{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree3{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree4{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree5{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree6{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 320px){
+    .hitch-hike-txt{
+        height: 20%;
+        width: 93%;
+        left: 11%;
+        transform: scale(0.88);
+        top: 17%;
+        z-index: 11;
+        position: absolute;
+        animation: fadeInUp 5s;
+    }
+    .landing_page_unicorn{
+        height: 75%;
+        width: 100%;
+        left: 0%;
+        top: 27%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 4s;
+    }
+    .landing_page_grass{
+        height: 80%;
+        width: 100%;
+        left: 0%;
+        top: 22%;
+        z-index: 6;
+        position: absolute;
+        animation: fadeIn 5s;
+    }
+    .landing_page_woman{
+        height: 72%;
+        width: 100%;
+        left: 0%;
+        top: 29%;
+        z-index: 5;
+        position: absolute;
+        animation: fadeIn 7s;
+    }
+    
+    .landing_page_tree1{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree2{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree3{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree4{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree5{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+    
+    .landing_page_tree6{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 3;
+        position: absolute;
+        animation: fadeIn 10s;
+        display: none;
+    }
+} 
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeInUp {
+    from { 
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
