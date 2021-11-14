@@ -223,10 +223,10 @@ body {
   .city-desc {
     width: 100vw;
   }
-  .city-desc h1 {
-    font-size: 2rem;
+  /* .city-desc h1 {
+    font-size: 3rem;
   }
   .city-desc p {
     font-size: 1.2rem;
-  }
+  } */
 }
