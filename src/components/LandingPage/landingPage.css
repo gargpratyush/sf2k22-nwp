@@ -6,11 +6,15 @@
     width: 100vw;
     margin-right: 0px;
     position: relative;
-    overflow: hidden;
 }
 body{
     overflow-x: hidden;
 }
+
+body{
+    overflow-x:hidden;
+}
+
 
 /* .hitch-hike-txt{
     height: 7rem;
