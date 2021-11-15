@@ -5,14 +5,8 @@ import { InfoOutlined,  NoteAddOutlined, ArrowBackIos,VerifiedUserOutlined } fro
 import { Router } from '@material-ui/icons';
 import { BrowserRouter } from 'react-router-dom';
 function Sidebar({ props }) {
-    const reloadPage = () => {
-        setTimeout(()=>{
-            window.location.reload(false);
-        }, 500);
-        console.log('page to reload');
-    }
     return (
-        <>
+        <><>
                     <div className="event-header active">
                 <button className="event-back" >
                     {/* <ArrowBackIos></ArrowBackIos> */}
@@ -43,7 +37,7 @@ function Sidebar({ props }) {
                     </ul>
                 </nav>
                 </div>
-            
+            </>
 
         </>
     );

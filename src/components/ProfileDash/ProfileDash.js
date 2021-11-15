@@ -55,11 +55,9 @@ const Event = (props) => {
   return (
   <div className="p-backgroundimg app">
     <div className="back-btn dash-back-btn" ><Link to="/" style={{color: "white"}}><FontAwesomeIcon icon={faArrowCircleLeft} ></FontAwesomeIcon></Link></div>
-    <Link className="zone-button" style={{position:"fixed"}} to={"/"}>
-      <img src="/favicon.ico" alt="homepage" height='50px' />
-    </Link>
+   
     <Nav name={"A Picture Tale"} />
-    <div className="p-container1">
+    <div className="p-container1" style={{marginRight: 0, paddingRight:  0}}>
       {renderComp()}
     </div>
   </div>

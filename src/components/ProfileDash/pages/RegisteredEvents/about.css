@@ -17,7 +17,6 @@
 .event-div-group,
   .event-div-solo {
     margin-top: 1rem;
-    margin-left: 1rem;
     border: 0.1rem solid whitesmoke;
     border-radius: 1rem;
     padding: 1rem;
@@ -65,8 +64,8 @@
 
 .p-db-content-box {
   position: relative;
-  left: 2%;
-  padding: 30px;
+  left: 20%;
+  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +74,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 5vh;
+  text-align: center;
 }
 
 .p-db-content-box h1 {
@@ -102,7 +101,7 @@
 }
 
 .p-db-effect-h1 .p-hover {
-  text-align: start;
+  text-align: center;
   padding: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -176,7 +175,7 @@
 @media only screen and (max-width: 610px){
   .p-db-content-box {
     width: 60%;
-    padding: 20px;
+    padding: 10px;
     left: 8%;
   }
   .event-heading-line {
@@ -188,7 +187,7 @@
 @media only screen and (max-width: 550px){
   .p-db-content-box{
     width: 55%;
-    padding: 20px;
+    padding: 10px;
     left: 5%;
   }
   .event-heading-line {
@@ -215,7 +214,7 @@
   .p-db-content-box {
     width: 45%;
     padding: 15px;
-    left: 3rem;
+    left: 6rem;
   }
   .p-db-content-box h1{
     font-size: 35px;
