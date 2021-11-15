@@ -201,7 +201,6 @@ export default function AccountBox(props) {
                         scrollbarWidth: "none",
                         zIndex: "1000",
                         opacity: "1",
-                        overflow:'hidden',
                     },
                     overlay: {
                         backgroundColor: "rgba(255, 255, 255, 0.1)",
