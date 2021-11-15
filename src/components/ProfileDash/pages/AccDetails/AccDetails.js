@@ -40,7 +40,7 @@ const Judgement = ({data}) => {
   //   }
   
   return (
-    <div classname="prof-outer-content" style={{maxWidth:"90%", zIndex: "1"}} >
+    <div classname="prof-outer-content" style={{width:"80%", zIndex: "1"}} >
      {/* <Card className="content-box effect-h1" style={{backgroundColor:"#2326309f" ,color:"white", textAlign:"left"  }}>
       <div style={{textAlign:"left"}}>
         <h1 className="hover hover-1">Account Details</h1>

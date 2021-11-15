@@ -62,7 +62,7 @@ const Dashboard = (props) => {
     <div className="backgroundimg app">
       <div className="back-btn dash-back-btn"  ><Link to="/eventspage" style={{color: "white"}}><FontAwesomeIcon icon={faArrowCircleLeft} ></FontAwesomeIcon></Link></div>
       <Link className="zone-button" style={{ position: "fixed" }} to={"/"}>
-        <img src="/favicon.ico" alt="homepage" height='50px' />
+        {/* <img src="/favicon.ico" alt="homepage" height='50px' /> */}
       </Link>
       <Nav eventName={props.content.name} />
 

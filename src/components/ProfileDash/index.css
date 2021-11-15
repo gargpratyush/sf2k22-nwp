@@ -83,16 +83,17 @@ background-size: cover;
   }
 }
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
   .p-container1 {
-    /* position: relative;
+    position: relative;
     top: 0;
-    left: -14px; */
+    left: -14px;
   }
-}
+} */
 
 .dash-back-btn{
   z-index: 3;
+  position: fixed;
 }
 
 /*h1 {
