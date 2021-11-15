@@ -200,11 +200,11 @@ export default function AccountBox(props) {
                         msOverflowStyle: "none",
                         scrollbarWidth: "none",
                         zIndex: "1000",
-                        opacity: "1"
+                        opacity: "1",
                     },
                     overlay: {
                         backgroundColor: "rgba(255, 255, 255, 0.1)",
-                        zIndex: "15"
+                        zIndex: "15",
                     }
                 }}
             >

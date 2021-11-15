@@ -1,16 +1,16 @@
 @font-face {
   font-family: poppins;
-  src: url(Font/Poppins-Medium.ttf);
+  src: url("Font/Poppins-Medium.ttf");
   font-weight: bolder;
 }
 @font-face {
   font-family: poppins;
-  src: url(Font/Poppins-Thin.ttf);
+  src: url("Font/Poppins-Thin.ttf");
   font-weight: thin;
 }
 @font-face {
-  font-family: poppins;
-  src: url(Font/Poppins-Regular.ttf);
+  font-family: RegularFont !important;
+  src: url("Font/Poppins-Regular.ttf");
   font-weight: normal;
 }
 
@@ -32,16 +32,6 @@ body {
     box-sizing: border-box;
   }
   
-  /* hide scrollbar 
-  ::-webkit-scrollbar {
-    width: 1px;
-    height: 1px;
-  }
-  
-  ::-webkit-scrollbar-button {
-    width: 1px;
-    height: 1px;
-  }*/
   .external {
     overflow-y: hidden;
     overflow-x: scroll;
@@ -110,7 +100,7 @@ body {
     transform: translateX(4rem) translateY(-7rem);
   }
   #HindiPoetry {
-    transform: translateX(1.5rem) translateY(-3rem);
+    transform: translateX(1.5rem) translateY(-2rem);
   }
   #HindiPoetry p {
     transform: translateX(4rem) translateY(-8rem);
@@ -122,7 +112,7 @@ body {
     transform: translateX(10rem) translateY(-7rem);
   }
   #ShakeLeg {
-    transform: translateX(3rem) translateY(-3rem);
+    transform: translateX(3rem) translateY(-1rem);
   }
   #ShakeLeg p {
     transform: translateX(3rem) translateY(-6rem);
@@ -134,7 +124,7 @@ body {
     transform: translateX(1rem) translateY(-7rem);
   }
   #Panache {
-    transform: translateX(-1rem) translateY(1.5rem);
+    transform: translateX(3rem) translateY(0rem);
   }
   #Panache p {
     transform: translateX(5rem) translateY(-7rem) translateZ(-.2px) scale(1.1);
@@ -154,7 +144,7 @@ body {
     max-width: 45vh;
     transition: .5s;
     vertical-align: top;
-    filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+    filter: saturate(90%) sepia(80%) hue-rotate(45deg);
   }
   .img-wrapper p {
     text-align: center;
@@ -166,6 +156,9 @@ body {
   }
   a:hover img {
     filter: none;
+  }
+  a:hover p {
+    color: #efecdb;
   }
   .city-desc {
     padding: 0 0 10vh 12vh;
@@ -192,17 +185,13 @@ body {
     color: #efecdb;
     text-shadow: 0 0 3px #3d3d42, 0 0 5px #3d3d42;
   }
-  .logo {
+  .scroll-instruction {
     position: absolute;
     display: flex;
-    top: 0.5rem;
-    left: 0.5rem;
+    top: 1rem;
+    left: 5rem;
     align-items: center;
     justify-content: center;
-  }
-  .logo img {
-    max-height: 4rem;
-    padding: 0.2rem;
   }
   .back-btn{
     position: absolute;
@@ -213,6 +202,34 @@ body {
   
   }
   .img-wrapper a:hover {
-    min-width: 47vh;
+    transform: scale(1.1);
+    transition-duration: 1s;
     text-decoration: none;
   }
+
+@media screen and (max-width: 780px) {
+  .img-wrapper img {
+    filter: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .horizontal-scroll-wrapper {
+    background-position: 0.4vh 0;
+  }
+  /* body {
+    font-size: 1rem;
+  } */
+  .city-desc {
+    width: 100vw;
+  }
+  .city-desc h1 {
+    overflow-wrap: break-word;
+  }
+  /* .city-desc h1 {
+    font-size: 3rem;
+  }
+  .city-desc p {
+    font-size: 1.2rem;
+  } */
+}

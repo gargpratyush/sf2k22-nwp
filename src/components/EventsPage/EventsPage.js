@@ -123,7 +123,7 @@
 // }
 
 // export default EventsPage
-import React from 'react'
+import React, {useRef} from 'react'
 import './stylesheet2.css'
 import { Link } from 'react-router-dom'
 import EnglishPoetry from './Events_Cards/EnglishPoetry.png'
@@ -147,13 +147,30 @@ import {faArrowCircleLeft} from '@fortawesome/free-solid-svg-icons';
 
 function EventsPage(city) {
 
+  
+  const onWheel = e => {
+    e.preventDefault();
+    const container = scrollRef.current;
+    const containerScrollPosition = scrollRef.current.scrollLeft;
+
+    container.scrollTo({
+      top: 0,
+      left: containerScrollPosition + e.deltaY,
+    });
+  };
+
+  const scrollRef = useRef(null);
+
   return (
-    <div className="external">
+    <div className="external"  
+    ref={scrollRef}
+    onWheel={onWheel}>
       <div className="horizontal-scroll-wrapper"
-        style={{ background: `url(${mainBg}), url(${city.city.imagebg}), url(${blueBg}`, backgroundSize: "auto 100%" }}>
+        style={{ background: `url(${mainBg}), url(${city.city.imagebg}), url(${blueBg}`, backgroundSize: "",
+         backgroundRepeat: "no-repeat"}}>
 
         <div className="city-desc">
-          <h1>
+          <h1 style={{fontFamily:'MediumFont'}}>
             {city.city.name}
           </h1>
           <p>
@@ -165,120 +182,87 @@ function EventsPage(city) {
           
           <div className="img-wrapper" id="EnglishPoetry" >
             <Link to="/eventspage/English Poetry Slam"
-              style={{
-                textDecoration: "none"
-              }}
               onClick={() => {
                 city.setEvent(dataevents[2]);
               }} >
               <img src={EnglishPoetry} alt="English Poetry Slam" />
-              <p>English Poetry Slam</p>
+              <p style={{fontFamily:'RegularFont'}}>English Poetry Slam</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="notes">
-            <Link to="/eventspage/Notes Less Travelled"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/Notes Less Travelled">
               <img src={notes} alt="Notes Less Travelled" />
-              <p>Notes Less Travelled</p>
+              <p style={{fontFamily:'RegularFont'}}>Notes Less Travelled</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="SFIdol">
-            <Link to="/eventspage/SF Idol"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/SF Idol">
               <img src={SFIdol} alt="SF Idol" />
-              <p>SF Idol</p>
+              <p style={{fontFamily:'RegularFont'}}>SF Idol</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="Nrityakala">
-            <Link to="/eventspage/Nrityakala"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/Nrityakala">
               <img src={Nrityakala} alt="Nrityakala" />
-              <p>Nrityakala</p>
+              <p style={{fontFamily:'RegularFont'}}>Nrityakala</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="IMeMyself">
-            <Link to="/eventspage/I Me Myself"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/I Me Myself">
               <img src={IMeMyself} alt="I Me Myself" />
-              <p>I Me Myself</p>
+              <p style={{fontFamily:'RegularFont'}}>I Me Myself</p>
             </Link>
           </div>
 
           <div className="img-wrapper wide" id="PictureTale">
-            <Link to="/eventspage/A Picture Tale"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/A Picture Tale">
               <img src={PictureTale} alt="Picture Tale" />
-              <p>A Picture Tale</p>
+              <p style={{fontFamily:'RegularFont'}}>A Picture Tale</p>
             </Link>
           </div>
 
           <div className="img-wrapper wide" id="HindiPoetry">
-            <Link to="/eventspage/Hindi Poetry Slam"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/Hindi Poetry Slam">
               <img src={HindiPoetry} alt="Hindi Poetry" />
-              <p>Hindi Poetry Slam</p>
+              <p style={{fontFamily:'RegularFont'}}>Hindi Poetry Slam</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="Tango">
-            <Link to="/eventspage/Two for A Tango"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/Two for A Tango">
               <img src={Tango} alt="Two for A Tango" />
-              <p>Two for A Tango</p>
+              <p style={{fontFamily:'RegularFont'}}>Two for A Tango</p>
             </Link>
           </div>
 
           <div className="img-wrapper wide" id="ShakeLeg">
-            <Link to="/eventspage/Shake A Leg"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/Shake A Leg">
               <img src={ShakeLeg} alt="Shake A Leg" />
-              <p>Shake A Leg</p>
+              <p style={{fontFamily:'RegularFont'}}>Shake A Leg</p>
             </Link>
           </div>
 
           {/* <div className="img-wrapper" id="Shuffle">
-            <Link to="/eventspage/Shuffle"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/Shuffle">
               <img src={Shuffle} alt="Shuffle" />
               <p>Shuffle</p>
             </Link>
           </div> */}
 
           <div className="img-wrapper" id="Panache">
-            <Link to="/eventspage/Panache"
-            style={{
-              textDecoration: "none"
-            }}>
+            <Link to="/eventspage/Panache">
               <img src={Panache} alt="Panache" />
-              <p>Panache</p>
+              <p style={{fontFamily:'RegularFont'}}>Panache</p>
             </Link>
           </div>
 
         </div>
       </div>
-      <div className="logo"><img href="google.com" src={SFLogo} alt="Spring Fest Logo" />Try scrolling←</div>
+      <div className="scroll-instruction">Try scrolling←</div>
       <div className="back-btn"><Link to="/" style={{color: "white"}}><FontAwesomeIcon icon={faArrowCircleLeft} ></FontAwesomeIcon></Link></div>
     </div>
   )
