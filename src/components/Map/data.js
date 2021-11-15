@@ -2,14 +2,17 @@ import Delhi from './images/delhi.png';
 import Mumbai from './images/mumbai.png';
 import Bangalore from './images/benglore.png';
 import Kolkata from './images/calcutta.png';
-import Chandigarh from './images/chandigarh.png';
+import Chandigarh from './images/chandigarh.png'; 
 import Hyderabad from './images/hyderabad.png';
-import Indore from './images/indore.jpg';
+// import Indore from './images/indore.jpg';
 import Jaipur from './images/jaipur.png';
 import Lucknow from './images/lucknow.png';
 import Nagpur from './images/nagpur.png';
 import Patna from './images/patna.png';
 import Ahemdabad from './images/ahemdabad.png';
+import Bhubaneswar from './images/bhubneshwar.jpg';
+import Pune from './images/pune.jpg';
+import Ranchi from './images/ranchi.jpg';       
 
 import DelhiBg from './../EventsPage/Event_City_Bg/delhi.png';
 import AhmedabadBg from './../EventsPage/Event_City_Bg/ahmedabaad.png';
@@ -18,12 +21,14 @@ import BangaloreBg from './../EventsPage/Event_City_Bg/bengaluru.png';
 import KolkataBg from './../EventsPage/Event_City_Bg/kolkata.png';
 import ChandigarhBg from './../EventsPage/Event_City_Bg/chandigarh.png';
 import HyderabadBg from './../EventsPage/Event_City_Bg/hyderabaad.png';
-import IndoreBg from './../EventsPage/Event_City_Bg/indore_.png';
+// import IndoreBg from './../EventsPage/Event_City_Bg/indore_.png';
 import JaipurBg from './../EventsPage/Event_City_Bg/jaipur.png';
 import LucknowBg from './../EventsPage/Event_City_Bg/lucknow.png';
 import NagpurBg from './../EventsPage/Event_City_Bg/nagpur.png';
 import PatnaBg from './../EventsPage/Event_City_Bg/patna.png';
-
+import BhubaneswarBg from './../EventsPage/Event_City_Bg/bhubaneshwar.png';
+import PuneBg from './../EventsPage/Event_City_Bg/pune.png';
+import RanchiBg from './../EventsPage/Event_City_Bg/ranchi.png';
 
 
 export const data =[
@@ -53,6 +58,18 @@ export const data =[
     },
     {
         id: 3,
+        name: "Bhubaneswar",
+        image: Bhubaneswar,
+        tag: "",
+        pinx: "69.2%",
+        piny: "53.33252427%",
+        cardx: "69.2%",
+        cardy: "47.33252427%"  ,
+        desc:"Bhubaneswar is an ancient city in India’s eastern state of Odisha, formerly Orissa",
+        imagebg: BhubaneswarBg
+    },
+    {
+        id: 4,
         name: "Chandigarh",
         image: Chandigarh,
         tag: "",
@@ -64,7 +81,7 @@ export const data =[
         imagebg: ChandigarhBg
     },
     {
-        id: 4,
+        id: 5,
         name: "Delhi",
         image: Delhi,
         pinx: "41.8%",
@@ -75,7 +92,7 @@ export const data =[
         imagebg: DelhiBg
     },
     {
-        id: 5,
+        id: 6,
         name: "Hyderabad",
         image: Hyderabad,
         tag: "",
@@ -86,18 +103,18 @@ export const data =[
         desc:"Hyderabad is the capital of southern India's Telangana state",
         imagebg: HyderabadBg
     },
-    {
-        id: 6,
-        name: "Indore",
-        image: Indore,
-        tag: "",
-        pinx: "37.666666667%",
-        piny: "45.44902913%",
-        cardx: "37.666666667%",
-        cardy: "38.44902913%"  ,
-        desc:"Indore is a city in the central Indian state of Madhya Pradesh",
-        imagebg: IndoreBg
-    },
+    // {
+    //     id: 6,
+    //     name: "Indore",
+    //     image: Indore,
+    //     tag: "",
+    //     pinx: "37.666666667%",
+    //     piny: "45.44902913%",
+    //     cardx: "37.666666667%",
+    //     cardy: "38.44902913%"  ,
+    //     desc:"Indore is a city in the central Indian state of Madhya Pradesh",
+    //     imagebg: IndoreBg
+    // },
     {
         id: 7,
         name: "Jaipur",
@@ -169,6 +186,30 @@ export const data =[
         cardy: "32.16747573%"  ,
         desc:"Patna is the capital and largest city of the state of Bihar in India",
         imagebg: PatnaBg
+    },
+    {
+        id: 13,
+        name: "Pune",
+        image: Pune,
+        tag: "",
+        pinx: "37.2%",
+        piny: "66.16747573%",
+        cardx: "37.2%",
+        cardy: "60.16747573%"  ,
+        desc:"Pune is a sprawling city in the western Indian state of Maharashtra.",
+        imagebg: PuneBg
+    },
+    {
+        id: 14,
+        name: "Ranchi",
+        image: Ranchi,
+        tag: "",
+        pinx: "67.2%",
+        piny: "45.16747573%",
+        cardx: "67.2%",
+        cardy: "38.16747573%"  ,
+        desc:"Ranchi is the capital of the Indian state of Jharkhand.",
+        imagebg: RanchiBg
     }
 
    
