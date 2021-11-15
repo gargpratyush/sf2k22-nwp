@@ -9,7 +9,7 @@
   font-weight: thin;
 }
 @font-face {
-  font-family: poppins;
+  font-family: RegularFont !important;
   src: url("Font/Poppins-Regular.ttf");
   font-weight: normal;
 }
