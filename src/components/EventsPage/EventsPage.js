@@ -170,7 +170,7 @@ function EventsPage(city) {
          backgroundRepeat: "no-repeat"}}>
 
         <div className="city-desc">
-          <h1 style={{fontFamily:'MediumFont'}}>
+          <h1>
             {city.city.name}
           </h1>
           <p>
@@ -179,84 +179,97 @@ function EventsPage(city) {
         </div>
 
         <div className="card-container">
-          
           <div className="img-wrapper" id="EnglishPoetry" >
             <Link to="/eventspage/English Poetry Slam"
               onClick={() => {
                 city.setEvent(dataevents[2]);
               }} >
               <img src={EnglishPoetry} alt="English Poetry Slam" />
-              <p style={{fontFamily:'RegularFont'}}>English Poetry Slam</p>
+              <p>English Poetry Slam</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="notes">
             <Link to="/eventspage/Notes Less Travelled">
               <img src={notes} alt="Notes Less Travelled" />
-              <p style={{fontFamily:'RegularFont'}}>Notes Less Travelled</p>
+              <p>Notes Less Travelled</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="SFIdol">
             <Link to="/eventspage/SF Idol">
               <img src={SFIdol} alt="SF Idol" />
-              <p style={{fontFamily:'RegularFont'}}>SF Idol</p>
+              <p>SF Idol</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="Nrityakala">
             <Link to="/eventspage/Nrityakala">
               <img src={Nrityakala} alt="Nrityakala" />
-              <p style={{fontFamily:'RegularFont'}}>Nrityakala</p>
+              <p>Nrityakala</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="IMeMyself">
             <Link to="/eventspage/I Me Myself">
               <img src={IMeMyself} alt="I Me Myself" />
-              <p style={{fontFamily:'RegularFont'}}>I Me Myself</p>
+              <p>I Me Myself</p>
+            </Link>
+          </div>
+
+          <div className="img-wrapper" id="Nukkad">
+            <Link to="/eventspage/Nukkad">
+              <img src={SFIdol} alt="Nukkad" />
+              <p>Nukkad</p>
             </Link>
           </div>
 
           <div className="img-wrapper wide" id="PictureTale">
             <Link to="/eventspage/A Picture Tale">
               <img src={PictureTale} alt="Picture Tale" />
-              <p style={{fontFamily:'RegularFont'}}>A Picture Tale</p>
+              <p>A Picture Tale</p>
+            </Link>
+          </div>
+
+          <div className="img-wrapper" id="HilarityEnsues">
+            <Link to="/eventspage/Hilarity Ensues">
+              <img src={IMeMyself} alt="Hilarity Ensues" />
+              <p>Hilarity Ensues</p>
             </Link>
           </div>
 
           <div className="img-wrapper wide" id="HindiPoetry">
             <Link to="/eventspage/Hindi Poetry Slam">
               <img src={HindiPoetry} alt="Hindi Poetry" />
-              <p style={{fontFamily:'RegularFont'}}>Hindi Poetry Slam</p>
+              <p>Hindi Poetry Slam</p>
             </Link>
           </div>
 
           <div className="img-wrapper" id="Tango">
             <Link to="/eventspage/Two for A Tango">
               <img src={Tango} alt="Two for A Tango" />
-              <p style={{fontFamily:'RegularFont'}}>Two for A Tango</p>
+              <p>Two for A Tango</p>
             </Link>
           </div>
 
           <div className="img-wrapper wide" id="ShakeLeg">
             <Link to="/eventspage/Shake A Leg">
               <img src={ShakeLeg} alt="Shake A Leg" />
-              <p style={{fontFamily:'RegularFont'}}>Shake A Leg</p>
+              <p>Shake A Leg</p>
             </Link>
           </div>
 
-          {/* <div className="img-wrapper" id="Shuffle">
+          <div className="img-wrapper" id="Shuffle">
             <Link to="/eventspage/Shuffle">
               <img src={Shuffle} alt="Shuffle" />
               <p>Shuffle</p>
             </Link>
-          </div> */}
+          </div>
 
           <div className="img-wrapper" id="Panache">
             <Link to="/eventspage/Panache">
               <img src={Panache} alt="Panache" />
-              <p style={{fontFamily:'RegularFont'}}>Panache</p>
+              <p>Panache</p>
             </Link>
           </div>
 

@@ -9,7 +9,7 @@
   font-weight: thin;
 }
 @font-face {
-  font-family: RegularFont !important;
+  font-family: poppins;
   src: url("Font/Poppins-Regular.ttf");
   font-weight: normal;
 }
@@ -51,8 +51,8 @@ body {
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-right: 5rem;
+    grid-template-columns: repeat(7, 1fr);
+    margin-left: -20vh;
   }
 
   .img-wrapper {
@@ -64,70 +64,82 @@ body {
   }
 
   #EnglishPoetry {
-    transform: translateX(-9rem);
+    transform: translateX(-2rem);
   }
   #EnglishPoetry p {
     transform: translateX(3rem) translateY(-10.5rem);
   }
   #notes {
-    transform: translateX(-9rem) translateY(2rem);
+    transform: translateX(-4rem) translateY(2rem);
   }
   #notes p {
     transform: translateX(8rem) translateY(-9rem);
   }
   #SFIdol {
-    transform: translateX(-10.5rem) translateY(2.5rem);
+    transform: translateX(-5.5rem) translateY(2.5rem);
   }
   #SFIdol p {
     transform: translateX(10rem) translateY(-15rem);
   }
   #Nrityakala {
-    transform: translateX(-5rem) translateY(2rem);
+    transform: translateX(0rem) translateY(2rem);
   }
   #Nrityakala p {
     transform: translateX(5rem) translateY(-6rem);
   }
   #IMeMyself {
-    transform: translateX(-4.5rem);
+    transform: translateX(0.5rem);
   }
   #IMeMyself p {
     transform: translateX(4rem) translateY(-7rem);
   }
+  #Nukkad {
+    transform: translateX(0.5rem);
+  }
+  #Nukkad p {
+    transform: translateX(9rem) translateY(-14rem);
+  }
   #PictureTale {
-    transform: translateX(1rem) translateY(-5rem);
+    transform: translateX(0rem) translateY(6rem);
   }
   #PictureTale p {
     transform: translateX(4rem) translateY(-7rem);
   }
+  #HilarityEnsues {
+    transform: translateX(9.5rem) translateY(-2rem);
+  }
+  #HilarityEnsues p {
+    transform: translateX(2rem) translateY(-8rem);
+  }
   #HindiPoetry {
-    transform: translateX(1.5rem) translateY(-2rem);
+    transform: translateX(7.5rem) translateY(-2rem);
   }
   #HindiPoetry p {
     transform: translateX(4rem) translateY(-8rem);
   }
   #Tango {
-    transform: translateX(1rem) translateY(-2rem);
+    transform: translateX(7.5rem) translateY(-2rem);
   }
   #Tango p {
     transform: translateX(10rem) translateY(-7rem);
   }
   #ShakeLeg {
-    transform: translateX(3rem) translateY(-1rem);
+    transform: translateX(8rem) translateY(-1rem);
   }
   #ShakeLeg p {
     transform: translateX(3rem) translateY(-6rem);
   }
   #Shuffle {
-    transform: translateX(1rem) translateY(-1rem);
+    transform: translateX(6rem) translateY(-1rem);
   }
   #Shuffle p {
     transform: translateX(1rem) translateY(-7rem);
   }
   #Panache {
-    transform: translateX(3rem) translateY(0rem);
+    transform: translateX(8rem) translateY(0rem);
   }
   #Panache p {
-    transform: translateX(5rem) translateY(-7rem) translateZ(-.2px) scale(1.1);
+    transform: translateX(5rem) translateY(-7rem);
   }  
   a {
     color: inherit;
@@ -163,7 +175,7 @@ body {
   .city-desc {
     padding: 0 0 10vh 12vh;
     display: flex;
-    width: 130vh;
+    width: 110vh;
     align-self: flex-end;
     flex-direction: column;
     align-items:flex-start;
@@ -221,9 +233,10 @@ body {
     font-size: 1rem;
   } */
   .city-desc {
-    width: 100vw;
+    width: 98vw;
   }
   .city-desc h1 {
+    width: 100%;
     overflow-wrap: break-word;
   }
   /* .city-desc h1 {
