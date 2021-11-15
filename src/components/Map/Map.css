@@ -256,12 +256,15 @@ stroke: black;
     height: 120vh;
     width: 100vw;
     font-size: 62.5%;
+    /* margin-right: 100%; */
 
     background-image: url("images/background.png");
     /* background: rgb(193,17,8);
     background: linear-gradient(90deg, rgba(193,17,8,1) 14%, rgba(121,88,9,1) 54%, rgba(209,123,17,1) 86%); */
   }
   .mobile_grid_container{
+    padding-top: 50px!important;
+    padding-bottom: 20px!important;
     display: grid;
     width: 0em;
     align-items: center;
@@ -289,7 +292,7 @@ stroke: black;
   .grid_child{
     font-family: 'standardFont';
     /* background: #e0e5ec; */
-    height: 4rem;
+    height: 2.7rem;
     width: 18rem;
     margin: 2.2rem;
     border-radius: 7px;
@@ -307,7 +310,7 @@ stroke: black;
      inset 0px 0px 0px 0px #0001,
      inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
     transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
-    font-size: 62.5%;
+    font-size: 35.5%;
     color: rgb(255, 255, 255);
 
     /* backdrop-filter: blur(5px) saturate(89%);
@@ -397,6 +400,7 @@ stroke: black;
 
 .mobile-close {
   cursor: pointer;
+  color: #080e1c;
   font-size: 40px;
   margin-top: 2px;
   /* width: 4rem;
@@ -521,7 +525,7 @@ stroke: black;
 @media screen and (max-width: 400px){
   .grid_child{
     width: 7rem;
-    font-size: 1.0rem;
+    font-size: 0.87rem;
   }
   .mobile_grid_container{
     grid-template-columns: 150px 150px; 
@@ -530,14 +534,14 @@ stroke: black;
 @media only screen and (min-width: 400px) and (max-width: 500px) {
   .grid_child{
     width: 10rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
 }
 @media screen and (min-width: 500px){
   .grid_child{
     width: 12rem;
-    font-size: 1.6rem;
+    font-size: 1.45rem;
   }
 
 }
