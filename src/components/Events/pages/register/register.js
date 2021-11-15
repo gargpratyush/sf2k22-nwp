@@ -228,12 +228,12 @@ function Signup(props) {
                   <h1 className="hover hover-1" style={{textAlign: "center"}}>Register for {props.name}</h1>
                 </div>
                 {
-                  (smax === 1) ? null : <div>
-                    <div> <p>
+                  (smax === 1) ? null : <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                    <div> <ul><p>
                       Note: You will be considered as team leader.
                       If anyone other than you is supposed to be
                       the leader, ask him to register.
-                    </p>
+                    </p></ul>
                     </div>
                     <div >
                       <Field name='numberOfMembers'>
