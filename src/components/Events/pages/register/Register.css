@@ -1,4 +1,4 @@
-
+/* 
 @import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
 
 html {
@@ -159,7 +159,7 @@ html {
     padding: 15px;
     left: 2rem;
   }
-}
+} */
 
  
   
@@ -196,7 +196,8 @@ html {
 
   .register-btn-evd{
     border: solid #c79031 0.15rem;
-    padding: 0.7rem;
+    padding: 0.9rem;
+    margin: 1rem;
     background-color: rgba(0,0,0,.5);
     color: whitesmoke;
     border-radius: 0.3rem;

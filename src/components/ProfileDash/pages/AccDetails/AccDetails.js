@@ -40,15 +40,15 @@ const Judgement = ({data}) => {
   //   }
   
   return (
-    <div className="p-db-contain">
+    <div classname="prof-outer-content" style={{maxWidth:"90%", zIndex: "1"}} >
      {/* <Card className="content-box effect-h1" style={{backgroundColor:"#2326309f" ,color:"white", textAlign:"left"  }}>
       <div style={{textAlign:"left"}}>
         <h1 className="hover hover-1">Account Details</h1>
       </div>
       
     </Card> */}
-    <Card className="p-content-box p-effect-h1" style={{backgroundColor:"#2326309f" ,color:"white" , borderRadius: "1.5rem" }}>
-      <h4 class="profile-card-heading">{data.name}</h4>
+    <Card className="p-content-box p-effect-h1" style={{backgroundColor:"#2326309f" ,color:"white" }}>
+      <h1 class="p-hover p-hover-1">{data.name}</h1>
 
       <div class="profile-card-college">
       {data.college} ({data.yop})
