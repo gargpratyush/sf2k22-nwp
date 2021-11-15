@@ -72,6 +72,7 @@ cursor: pointer;
   color: #ffffff !important;
   border-radius: 200px !important;
   opacity: 75% !important;
+  z-index: 1000 !important;
 }
 
 
