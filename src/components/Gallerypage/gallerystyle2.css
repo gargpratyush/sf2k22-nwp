@@ -74,5 +74,6 @@
     }
     .gallery{
         height:280px;
+        overflow:hidden;
     }
 }
