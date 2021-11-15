@@ -47,9 +47,9 @@ const Dashboard = (props) => {
       case "abt":
         return (<About about={props.content.about} name={props.content.name} />);
       case "Rules":
-        return (<Rules rules={props.content.rules} />);
+        return (<Rules rules={props.content.rules} offlinerules={props.content.offlinerules} mode={props.content.mode} />);
       case "Sub":
-        return (<Judgement name={props.content.name} mail={props.content.mail} />);
+        return (<Judgement name={props.content.name} mail={props.content.mail} mode={props.content.mode} />);
       case "Reg":
         return (<Register name={props.content.name} />);
       default:
