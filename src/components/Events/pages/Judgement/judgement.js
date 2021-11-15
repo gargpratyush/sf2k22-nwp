@@ -40,13 +40,10 @@ const Judgement = (props) => {
   //       getSubmission();
   //     }
   //   }
-  
-  return (
-    <div>
-    <Card className="content-box effect-h1" style={{backgroundColor:"#2326309f" ,color:"white"  }}>
-      <div>
-        <h1 className="hover hover-1">Submission</h1>
-      </div>
+  let subElem = <></>;
+  if(props.mode=="Online"){
+     subElem=(
+      <>
       <ul>
         {/*
           judgement[eventName].map((item, i) => (
@@ -74,7 +71,25 @@ const Judgement = (props) => {
             <li>The hashtags #sf2k22 and #Hitchhike need to be used in the caption.</li>
           </ul>
         </li>
-      </ul>
+      </ul></>
+    )}
+    else{
+      subElem=(
+          <ul style={{listStyleType:"none", textAlign: "center"}}>
+            <li>The Events will be held offline here</li>
+            <li>You will be notified soon.</li>
+          </ul>
+        ) 
+    }
+  
+  
+  return (
+    <div>
+    <Card className="content-box effect-h1" style={{backgroundColor:"#2326309f" ,color:"white"  }}>
+      <div>
+        <h1 className="hover hover-1">Submission</h1>
+      </div>
+      {subElem}
       {/* <span>{link === "" || link === null ? "" : "Submitted Link: " + link}</span>
       {(props.reged) ?(<Formik
         initialValues={{link: ""}}

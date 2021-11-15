@@ -41,12 +41,12 @@ background-size: cover;
 
 .p-container1 {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  left: -100%;
-  width: 700px;
-  margin: 0px auto;
-  padding: 20px 20px 20px 20px;
+  justify-content: center;
+  align-items: center; 
+ /* left: -100%; */
+  width: 78%;
+  margin: 60px auto;
+  padding: 20px 20px 20px 0px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* overflow: hidden;  */
@@ -64,32 +64,36 @@ background-size: cover;
 } */
 
 @media only screen and (max-width: 1100px) {
-  .container1 {
+  .p-container1 {
     position: relative;
     top: 0;
-    left: 10px;
-    width: 60%;
+    width: 70%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .container1 {
-    position: relative;
+  .p-container1 {
+    /* position: relative;
     top: 0;
-    margin-left: 50px;
-    width: 600px;
+    margin-left: 50px; */
+    width: 100vw;
   }
   .back-btn{
     left: 1rem;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .container1 {
+/* @media only screen and (max-width: 400px) {
+  .p-container1 {
     position: relative;
     top: 0;
     left: -14px;
   }
+} */
+
+.dash-back-btn{
+  z-index: 3;
+  position: fixed;
 }
 
 /*h1 {

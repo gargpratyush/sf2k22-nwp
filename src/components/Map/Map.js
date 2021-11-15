@@ -345,7 +345,7 @@ const Map = (props) => {
                 {/* Left buttons */}
                 <div className="desktop_parent_div_flex_left">
                     <div className="desktop_flex_container_left">
-                        {DATA.filter(CiTy => CiTy.id <= 6).map((leftCity, key) => (
+                        {DATA.filter(CiTy => CiTy.id <= 7).map((leftCity, key) => (
                             
                             <div key={key}>
                                 <Link to="/eventspage">
@@ -395,7 +395,7 @@ const Map = (props) => {
                 {/* Right buttons */}
                 <div className="desktop_parent_div_flex_right">
                     <div className="desktop_flex_container_right">
-                        {DATA.filter(CiTy => CiTy.id > 6).map((leftCity, key) => (
+                        {DATA.filter(CiTy => CiTy.id > 7).map((leftCity, key) => (
 
                             <div key={key}>
                                 <Link to="/eventspage">

@@ -44,12 +44,12 @@
   }
   @media screen and (min-width:600px) and (max-width:990px){
     .footer-credits-popup {
-      top:135%;
+      top:225%;
     }
   }
   @media screen and (max-width:600px){
     .footer-credits-popup {
-      top:140%;
+      top:370%;
     }
   }
   @font-face{

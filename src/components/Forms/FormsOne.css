@@ -67,8 +67,19 @@ cursor: pointer;
   /* padding-top:5px !important;
   padding-bottom: 5px !important; */
 }
+ 
 
 
+
+.Input::placeholder {
+  
+  font-family: Poppins;
+  color: #ffffff !important;
+  border-radius: 200px !important;
+  opacity: 75% !important;
+  z-index: 1000 !important;
+}
+ 
 
 
 .captchae {

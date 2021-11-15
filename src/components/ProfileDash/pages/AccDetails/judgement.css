@@ -55,7 +55,7 @@ hr {
 
 .p-content-box {
   position: relative;
-  left: 2%;
+  margin: auto;
   padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +65,6 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-          margin-top: 0;
 }
 
 .p-content-box h1 {
@@ -92,7 +91,7 @@ hr {
 }
 
 .p-effect-h1 .p-hover {
-  text-align: start;
+  text-align: center;
   padding: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -168,67 +167,92 @@ hr {
 
 @media only screen and (max-width: 1100px){
   .p-content-box {
-    left: 25%;
+    /* left: 25%; */
   }
 }
 
 @media only screen and (max-width: 768px){
   .p-content-box {
-    width: 70%;
+    /* width: 70%; */
     padding: 20px;
-    left: 15%;
+    /* left: 15%; */
+    margin-left: 3.7rem;
   }
 }
 
 @media only screen and (max-width: 610px){
   .p-content-box {
-    width: 70%;
-    padding: 10px;
-    left: 10%;
+    /* width: 70%; */
+    padding: 15px;
+    /* left: 10%; */
+    margin-left: 3.7rem;
   }
 }
 
 @media only screen and (max-width: 550px){
-  .p-content-box{
-    width: 75%;
+  .p-content-box {
+    /* width: 70%; */
     padding: 10px;
-    left: 5%;
+    /* left: 10%; */
+    margin-left: 3.7rem;
   }
 }
 
 
 @media only screen and (max-width: 460px){
   .p-content-box {
-    width: 70%;
+    /* width: 70%; */
     padding: 10px;
-    left: 3rem;
-  }
-}
-
-@media only screen and (max-width: 380px){
-  .p-content-box {
-    width: 75%;
-    padding: 15px;
-    left: 3rem;
+    /* left: 10%; */
+    margin-left: 3.7rem;
   }
   .p-content-box h1{
     font-size: 35px;
   }
 }
 
+@media only screen and (max-width: 380px){
+  .p-content-box {
+    /* width: 70%; */
+    padding: 10px;
+    /* left: 10%; */
+    margin-left: 3.7rem;
+  }
+  .p-content-box h1{
+    font-size: 35px;
+  }
+  .p-content-box h3{
+    font-size: 25px;
+  }
+}
+
 @media only screen and (max-width: 350px){
   .p-content-box {
-    width: 70%;
-    padding: 15px;
-    left: 2rem;
+    /* width: 70%; */
+    padding: 10px;
+    /* left: 10%; */
+    margin-left: 3.7rem;
+  }
+  .p-content-box h1{
+    font-size: 35px;
+  }
+  .prof-outer-content{
+    width: 80%;
   }
 }
 
 @media only screen and (max-width: 315px){
   .p-content-box {
-    width: 70%;
-    padding: 15px;
-    left: 2rem;
+    /* width: 70%; */
+    padding: 10px;
+    /* left: 10%; */
+    margin-left: 3.7rem;
+  }
+  .p-content-box h1{
+    font-size: 35px;
+  }
+  .prof-outer-content{
+    width: 80%;
   }
 }
 /*# sourceMappingURL=judgement.css.map */

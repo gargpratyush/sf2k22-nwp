@@ -220,19 +220,20 @@ function Signup(props) {
       >
         {({ errors, values, touched, setValues }) => {
           // console.log("values", values)
-          return <Form>
-            <Card className="db-content-box db-effect-h1" style={{ backgroundColor: "#2326309f", color: "white" }}>
+          return (<div>
+            <Card className="content-box  effect-h1" style={{ backgroundColor: "#2326309f", color: "white" }}>
               <span>
+              <Form>
                 <div>
                   <h1 className="hover hover-1" style={{textAlign: "center"}}>Register for {props.name}</h1>
                 </div>
                 {
-                  (smax === 1) ? null : <div>
-                    <div> <p>
+                  (smax === 1) ? null : <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                    <div> <ul><p>
                       Note: You will be considered as team leader.
                       If anyone other than you is supposed to be
                       the leader, ask him to register.
-                    </p>
+                    </p></ul>
                     </div>
                     <div >
                       <Field name='numberOfMembers'>
@@ -293,40 +294,41 @@ function Signup(props) {
               </FieldArray> */}
                   </div>
                 }
-                <div className=''>
+                <div style={{textAlign: "center"}}>
                   <button type='submit' className='register-btn-evd'>Register!</button>
                 </div>
+                </Form>
               </span>
-            </Card>
-          </Form>
+            </Card></div>
+          )
         }
         }
       </Formik>
     )
   }
   else if (!isLogged) {
-    return (
-      <Card className="db-content-box db-effect-h1" style={{backgroundColor:"#2326309f" ,color:"white"  }}>
+    return (<div>
+      <Card className="content-box  effect-h1" style={{backgroundColor:"#2326309f" ,color:"white"  }}>
         <div>
           <h1 className="hover hover-1" style={{textAlign: "center"}} >Register for {props.name} </h1>
         </div>
         <ul>
-          <h2>You need to login first to register for this event. </h2>
+          <h3 style={{textAlign: "center"}}>You need to login first to register for this event. </h3>
         </ul>
-      </Card>
+      </Card></div>
     )
     // <h2 className="alreadyReg"></h2>
   }
   else if (reged && isLogged) {
-    return (
-      <Card className="db-content-box db-effect-h1" style={{backgroundColor:"#2326309f" ,color:"white"  }}>
+    return (<div>
+      <Card className="content-box  effect-h1" style={{backgroundColor:"#2326309f" ,color:"white"  }}>
         <div>
           <h1 className="hover hover-1" style={{textAlign: "center"}}>Register for {props.name}</h1>
         </div>
         <ul>
-          <h2> You have already registered for this event. </h2>
+          <h2 style={{textAlign: "center"}}> You have already registered for this event. </h2>
         </ul>
-      </Card>
+      </Card></div>
     )
     // return <h2 className="alreadyReg">You already registered for this event. </h2>
   }

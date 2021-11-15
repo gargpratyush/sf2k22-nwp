@@ -1,8 +1,14 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+
+
 @font-face {
   font-family: poppins;
   src: url(Font/Poppins-Regular.ttf);
   font-weight: normal;
 }
+
 html {
     height: 100%;
   }
@@ -13,7 +19,7 @@ html {
     background: linear-gradient(#141e30, #243b55);
   }
    
-  
+/*  
 .db-content-box {
   position: relative;
   left: 20%;
@@ -161,7 +167,7 @@ html {
     padding: 15px;
     left: 2rem;
   }
-}
+} */
 
  
   
@@ -198,7 +204,8 @@ html {
 
   .register-btn-evd{
     border: solid #c79031 0.15rem;
-    padding: 0.7rem;
+    padding: 0.9rem;
+    margin: 1rem;
     background-color: rgba(0,0,0,.5);
     color: whitesmoke;
     border-radius: 0.3rem;
@@ -227,7 +234,7 @@ html {
 }
 
 .evd-input{
-  
+  width: 13rem;
   color: black;
   justify-content: center;
   margin: 0.5rem;

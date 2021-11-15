@@ -170,7 +170,7 @@ function EventsPage(city) {
          backgroundRepeat: "no-repeat"}}>
 
         <div className="city-desc">
-          <h1 style={{fontFamily:'MediumFont'}}>
+          <h1>
             {city.city.name}
           </h1>
           <p>
@@ -179,7 +179,7 @@ function EventsPage(city) {
         </div>
 
         <div className="card-container">
-          
+          <div></div>
           <div className="img-wrapper" id="EnglishPoetry" >
             <Link to="/eventspage/English Poetry Slam"
               onClick={() => {
@@ -190,12 +190,12 @@ function EventsPage(city) {
             </Link>
           </div>
 
-          <div className="img-wrapper" id="notes">
+          {/* <div className="img-wrapper" id="notes">
             <Link to="/eventspage/Notes Less Travelled">
               <img src={notes} alt="Notes Less Travelled" />
               <p style={{fontFamily: "RegularFont"}} >Notes Less Travelled</p>
             </Link>
-          </div>
+          </div> */}
 
           <div className="img-wrapper" id="SFIdol">
             <Link to="/eventspage/SF Idol">
@@ -219,10 +219,24 @@ function EventsPage(city) {
             </Link>
           </div>
 
+          <div className="img-wrapper" id="Nukkad">
+            <Link to="/eventspage/Nukkad">
+              <img src={SFIdol} alt="Nukkad" />
+              <p>Nukkad</p>
+            </Link>
+          </div>
+
           <div className="img-wrapper wide" id="PictureTale">
             <Link to="/eventspage/A Picture Tale">
               <img src={PictureTale} alt="Picture Tale" />
               <p style={{fontFamily: "RegularFont"}}>A Picture Tale</p>
+            </Link>
+          </div>
+
+          <div className="img-wrapper" id="HilarityEnsues">
+            <Link to="/eventspage/Hilarity Ensues">
+              <img src={IMeMyself} alt="Hilarity Ensues" />
+              <p>Hilarity Ensues</p>
             </Link>
           </div>
 
@@ -247,12 +261,12 @@ function EventsPage(city) {
             </Link>
           </div>
 
-          {/* <div className="img-wrapper" id="Shuffle">
+          <div className="img-wrapper" id="Shuffle">
             <Link to="/eventspage/Shuffle">
               <img src={Shuffle} alt="Shuffle" />
               <p>Shuffle</p>
             </Link>
-          </div> */}
+          </div>
 
           <div className="img-wrapper" id="Panache">
             <Link to="/eventspage/Panache">

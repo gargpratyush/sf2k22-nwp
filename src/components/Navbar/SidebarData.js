@@ -20,19 +20,13 @@ export const SidebarData=[
     {
         title:'Cities',
         path:'/Citymap',
-        icons:<IoIcons.IoIosPaper/>,
+        icons:<FaIcons.FaHotel/>,
         CName:'nav-text'
     },
     {
         title:'Contact Us',
         path:'/Foot',
-        icons:<IoIcons.IoMdPeople/>,
-        CName:'nav-text'
-    },
-    {
-        title:'Know More',
-        path:'/Knowmore',
-        icons:<IoIcons.IoMdPeople/>,
+        icons:<FaIcons.FaPhone/>,
         CName:'nav-text'
     }
 ]

@@ -47,9 +47,9 @@ const Dashboard = (props) => {
       case "abt":
         return (<About about={props.content.about} name={props.content.name} />);
       case "Rules":
-        return (<Rules rules={props.content.rules} />);
+        return (<Rules rules={props.content.rules} offlinerules={props.content.offlinerules} mode={props.content.mode} />);
       case "Sub":
-        return (<Judgement name={props.content.name} mail={props.content.mail} />);
+        return (<Judgement name={props.content.name} mail={props.content.mail} mode={props.content.mode} />);
       case "Reg":
         return (<Register name={props.content.name} />);
       default:
@@ -62,7 +62,7 @@ const Dashboard = (props) => {
     <div className="backgroundimg app">
       <div className="back-btn dash-back-btn"  ><Link to="/eventspage" style={{color: "white"}}><FontAwesomeIcon icon={faArrowCircleLeft} ></FontAwesomeIcon></Link></div>
       <Link className="zone-button" style={{ position: "fixed" }} to={"/"}>
-        <img src="/favicon.ico" alt="homepage" height='50px' />
+        {/* <img src="/favicon.ico" alt="homepage" height='50px' /> */}
       </Link>
       <Nav eventName={props.content.name} />
 
