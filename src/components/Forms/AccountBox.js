@@ -8,6 +8,8 @@ import { AccountContext } from "./AccountContext ";
 import img from '../Map/images/background.png';
 import Modal from 'react-modal';
 import zIndex from '@material-ui/core/styles/zIndex';
+import { ToastContainer, toast } from 'react-toastify';
+
 Modal.setAppElement('body');
 
 const BoxContainer = styled.div`
@@ -108,12 +110,10 @@ const expandingTransition = {
 export default function AccountBox(props) {
     const history = useHistory();
     const [isExpanded, setExpanded] = useState(false);
-    const [isLogged, setLogged] = useState('data' in localStorage);
     const [active, setActive] = useState("signin");
-    const [modalIsOpen, setModal] = useState(false)
 
-    useEffect(()=>{
-        props.setIsLogged(isLogged);
+    useEffect(() => {
+        props.setLogged(props.isLogged);
     })
 
     const playExpandingAnimation = () => {
@@ -141,43 +141,8 @@ export default function AccountBox(props) {
 
     return (
         <AccountContext.Provider value={contextValue}>
-            {(!isLogged) ?
-                (
-                    <button
-                        style={{
-                            backgroundColor: '#060b26',
-                            borderRadius: '10px',
-                            color: 'white',
-                            padding: '10px',
-                            marginBottom: '450px'
-                        }}
-                        onClick={() => setModal(true)}>
-                        Sign In / Sign Up
-                    </button>
-                ) :
-                (
-                    <button
-                        style={{
-                            backgroundColor: '#060b26',
-                            borderRadius: '10px',
-                            color: 'white',
-                            padding: '10px',
-                            marginBottom: '450px'
-                        }}
-                        onClick={() => {
-                            setLogged(false)
-                            localStorage.removeItem('data')
-                            localStorage.removeItem('reg_events')
-                            localStorage.removeItem('events')
-                            if(history.location.pathname.search("profile")>=0)
-                                history.push("/");
-                        }}>
-                        Logout
-                    </button>
-                )
-            }
-            <Modal isOpen={modalIsOpen}
-                onRequestClose={() => setModal(false)}
+            <Modal isOpen={props.isOpen}
+                onRequestClose={() => props.setModal(false)}
                 style={{
                     content:
                     {
@@ -216,7 +181,7 @@ export default function AccountBox(props) {
                             variants={backdropVariants}
                             transition={expandingTransition}
                         />
-                        <div onClick={() => setModal(false)}
+                        <div onClick={() => props.setModal(false)}
                             style={{
                                 fontFamily: 'Poppins, Sans SC',
                                 color: "white",
@@ -261,11 +226,12 @@ export default function AccountBox(props) {
                         )}
                     </TopContainer>
                     <InnerContainer>
-                        {active === "signin" && <LoginFormOne setLogged={setLogged} setModal={setModal} />}
-                        {active === "signup" && <SignupFormOne setLogged={setLogged} setModal={setModal} />}
+                        {active === "signin" && <LoginFormOne setLogged={props.setLogged} setModal={props.setModal} />}
+                        {active === "signup" && <SignupFormOne setLogged={props.setLogged} setModal={props.setModal} />}
                     </InnerContainer>
                 </BoxContainer>
             </Modal>
+            {/* <ToastContainer /> */}
         </AccountContext.Provider >
     );
 }

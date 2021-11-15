@@ -63,9 +63,14 @@ cursor: pointer;
   font-family: Poppins;
   background-color: #080e1c !important;
   color: #fff !important;
+  margin-top: -6px;
   /* padding-top:5px !important;
   padding-bottom: 5px !important; */
 }
+ 
+
+
+
 .Input::placeholder {
   
   font-family: Poppins;
@@ -74,6 +79,7 @@ cursor: pointer;
   opacity: 75% !important;
   z-index: 1000 !important;
 }
+ 
 
 
 .captchae {

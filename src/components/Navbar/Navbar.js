@@ -6,6 +6,8 @@ import { SidebarData } from './SidebarData';
 import './navbarstyle.css';
 import { IconContext } from 'react-icons';
 import FormsOne from '../Forms/FormsOne';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -21,6 +23,9 @@ function Navbar() {
             <FaIcons.FaBars onClick={() => setSidebar(true)} />
           </Link>
         </div>
+        <span className='menu-sth btnTopLandingPage' style={{ fontFamily: 'MediumFont' }}>
+          <FormsOne isLogged={isLogged} setIsLogged={setIsLogged} /> 
+        </span>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={() => setSidebar(false)}>
             <li className='navbar-toggle'>
@@ -34,13 +39,15 @@ function Navbar() {
                 <li key={index} className={item.CName}>
                   <Link to={item.path}>
                     {item.icons}
-                    <span className='menu-sth' style={{fontFamily:'MediumFont',fontSize:'20px'}}>{item.title}</span>
+                    <span className='menu-sth' style={{ fontFamily: 'MediumFont', fontSize: '20px' }}>{item.title}</span>
                   </Link>
                 </li>
               );
             })}
-            <span className='menu-sth' style={{fontFamily:'MediumFont'}}><FormsOne setIsLogged={setIsLogged} /></span>
-            
+            <span className='menu-sth' style={{ fontFamily: 'MediumFont' }}>
+            <FormsOne isLogged={isLogged} setIsLogged={setIsLogged} /> 
+            <ToastContainer />
+            </span>
           </ul>
         </nav>
       </IconContext.Provider>
