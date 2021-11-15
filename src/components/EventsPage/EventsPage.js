@@ -179,6 +179,7 @@ function EventsPage(city) {
         </div>
 
         <div className="card-container">
+          <div></div>
           <div className="img-wrapper" id="EnglishPoetry" >
             <Link to="/eventspage/English Poetry Slam"
               onClick={() => {
@@ -189,12 +190,12 @@ function EventsPage(city) {
             </Link>
           </div>
 
-          <div className="img-wrapper" id="notes">
+          {/* <div className="img-wrapper" id="notes">
             <Link to="/eventspage/Notes Less Travelled">
               <img src={notes} alt="Notes Less Travelled" />
               <p>Notes Less Travelled</p>
             </Link>
-          </div>
+          </div> */}
 
           <div className="img-wrapper" id="SFIdol">
             <Link to="/eventspage/SF Idol">

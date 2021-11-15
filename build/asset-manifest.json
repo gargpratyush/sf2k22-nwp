@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/NWP-22-AlmostDone/static/css/main.7e5699b3.chunk.css",
-    "main.js": "/NWP-22-AlmostDone/static/js/main.86deabff.chunk.js",
-    "main.js.map": "/NWP-22-AlmostDone/static/js/main.86deabff.chunk.js.map",
+    "main.css": "/NWP-22-AlmostDone/static/css/main.29b7de21.chunk.css",
+    "main.js": "/NWP-22-AlmostDone/static/js/main.8c84ccb5.chunk.js",
+    "main.js.map": "/NWP-22-AlmostDone/static/js/main.8c84ccb5.chunk.js.map",
     "runtime-main.js": "/NWP-22-AlmostDone/static/js/runtime-main.582ddcdc.js",
     "runtime-main.js.map": "/NWP-22-AlmostDone/static/js/runtime-main.582ddcdc.js.map",
     "static/css/2.137b36b6.chunk.css": "/NWP-22-AlmostDone/static/css/2.137b36b6.chunk.css",
-    "static/js/2.03a3427c.chunk.js": "/NWP-22-AlmostDone/static/js/2.03a3427c.chunk.js",
-    "static/js/2.03a3427c.chunk.js.map": "/NWP-22-AlmostDone/static/js/2.03a3427c.chunk.js.map",
+    "static/js/2.c39c66b8.chunk.js": "/NWP-22-AlmostDone/static/js/2.c39c66b8.chunk.js",
+    "static/js/2.c39c66b8.chunk.js.map": "/NWP-22-AlmostDone/static/js/2.c39c66b8.chunk.js.map",
     "static/js/3.9f41fc7b.chunk.js": "/NWP-22-AlmostDone/static/js/3.9f41fc7b.chunk.js",
     "static/js/3.9f41fc7b.chunk.js.map": "/NWP-22-AlmostDone/static/js/3.9f41fc7b.chunk.js.map",
     "index.html": "/NWP-22-AlmostDone/index.html",
     "static/css/2.137b36b6.chunk.css.map": "/NWP-22-AlmostDone/static/css/2.137b36b6.chunk.css.map",
-    "static/css/main.7e5699b3.chunk.css.map": "/NWP-22-AlmostDone/static/css/main.7e5699b3.chunk.css.map",
-    "static/js/2.03a3427c.chunk.js.LICENSE.txt": "/NWP-22-AlmostDone/static/js/2.03a3427c.chunk.js.LICENSE.txt",
+    "static/css/main.29b7de21.chunk.css.map": "/NWP-22-AlmostDone/static/css/main.29b7de21.chunk.css.map",
+    "static/js/2.c39c66b8.chunk.js.LICENSE.txt": "/NWP-22-AlmostDone/static/js/2.c39c66b8.chunk.js.LICENSE.txt",
     "static/media/EnglishPoetry.665b120c.png": "/NWP-22-AlmostDone/static/media/EnglishPoetry.665b120c.png",
     "static/media/HindiPoetry.82dc75e0.png": "/NWP-22-AlmostDone/static/media/HindiPoetry.82dc75e0.png",
     "static/media/IMeMyself.7307fac4.png": "/NWP-22-AlmostDone/static/media/IMeMyself.7307fac4.png",
@@ -90,8 +90,8 @@
   "entrypoints": [
     "static/js/runtime-main.582ddcdc.js",
     "static/css/2.137b36b6.chunk.css",
-    "static/js/2.03a3427c.chunk.js",
-    "static/css/main.7e5699b3.chunk.css",
-    "static/js/main.86deabff.chunk.js"
+    "static/js/2.c39c66b8.chunk.js",
+    "static/css/main.29b7de21.chunk.css",
+    "static/js/main.8c84ccb5.chunk.js"
   ]
 }
