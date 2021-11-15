@@ -1,21 +1,21 @@
 @font-face {
-  font-family: poppins;
+  font-family: Poppins;
   src: url("Font/Poppins-Medium.ttf");
   font-weight: bolder;
 }
 @font-face {
-  font-family: poppins;
+  font-family: Poppins;
   src: url("Font/Poppins-Thin.ttf");
   font-weight: thin;
 }
 @font-face {
-  font-family: poppins;
+  font-family: RegularFont !important;
   src: url("Font/Poppins-Regular.ttf");
   font-weight: normal;
 }
 
 body {
-    font-family: poppins, sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: normal;
     font-size: 1.5rem;
     background: #efecdb;
@@ -33,7 +33,7 @@ body {
   }
   
   .external {
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: scroll;
     display: flex;
     height: 100vh;
