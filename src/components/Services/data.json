@@ -47,7 +47,8 @@
       "JC": [],
       "teamsize": [1, 1],
       "mail": "dramatics.sf@gmail.com",
-      "subdoc": "your video entry"
+      "subdoc": "your video entry",
+      "mode": "Offline"
     },
     { "name" : "English Poetry Slam",
       "about": "One of the events of the fest, which involves the combined art of story-telling, stand-up and poetry writing",
@@ -75,7 +76,8 @@
       "JC": [],
       "teamsize": [1, 1],
       "mail": "literary.sf22@gmail.com",
-      "subdoc": "your video entry"
+      "subdoc": "your video entry",
+      "mode": "OfflineSelect"
     },
     { "name": "Hindi Poetry Slam",
       "about": "One of the events of the fest, which involves the combined art of story-telling, stand-up and poetry writing",
@@ -103,25 +105,8 @@
       "JC": [],
       "teamsize": [1, 1],
       "mail": "literary.sf22@gmail.com",
-      "subdoc": "your video entry"
-    },
-    { "name": "Notes Less Travelled",
-      "about": "Get ready to unveil the singer within you as Spring Fest presents SF Idol",
-      "rules": [
-        "This is an individual event and will take place in 2 rounds : NWP, Finals",
-        "Participants have to record a video of themselves while playing the instrument",
-        "Judging Criteria: Accuracy of notes, Rhythm, selection of composition/original composition, Technique, Overall Impact",
-        "Time limit is three minutes. After three minutes, a penalty of 0.5 is automatically deducted, without warning, from each musician’s overall score for every subsequent 10 seconds. ",
-        "Use of backing tracks or any other instruments is not allowed. Audio cannot be processed or altered after recording.",
-        "Only 1 entry is allowed per participant.",
-        "Recording of video should be done without any pauses ( the whole video should be recorded at one time and not in parts).",
-        "No video and audio editing is allowed , if any such editing is detected participants will be disqualified."
-      ],
-      "offlinerules": [],
-      "JC": [],
-      "teamsize": [1, 1],
-      "mail": "music.sf22@gmail.com",
-      "subdoc": "your video entry"
+      "subdoc": "your video entry",
+      "mode":"OfflineSelect"
     },
     { "name": "SF Idol",
       "about": "Get ready to unveil the singer within you as Spring Fest presents SF Idol",
@@ -175,7 +160,7 @@
       "mode": "Offline"
     },
     { "name": "Nrityakala",
-      "about": "Get ready to unveil the singer within you as Spring Fest presents SF Idol",
+      "about": "Classical Dance, Solo Competition. A daring platform to showcase your moves and compete against the best dancers in the country",
       "rules": [
         "This is an individual event and will take place in 2 rounds. Rounds: NWP, Finals",
         "Participants have to record a video of themselves while performing.",
@@ -190,7 +175,8 @@
       "JC": [],
       "teamsize": [1, 1],
       "mail": "dance.sf22@gmail.com",
-      "subdoc": "your video entry"
+      "subdoc": "your video entry",
+      "mode":"Online"
     },
     { "name": "Two For A Tango",
       "about": "A duet dancing competition that sets the stage ablaze with the astonishing chemistry between the partners",
@@ -244,7 +230,7 @@
       "mode": "Offline"
     },
     { "name": "Panache",
-      "about": "Get ready to unveil the singer within you as Spring Fest presents SF Idol",
+      "about": "Paper dress designing competition. This will be your moment of glory and your chance to steal the show, so prep up for Panache and dazzle the audience with your talent and skills.",
       "rules": [
         "This is an individual event and will take place in 2 rounds. Rounds: NWP, Finals",
         "Participating teams are needed to make a dress from the Newspapers, A4 sheets, Ribbons, scissor, gift wrap, stapler, pins, and cello tape. No additional logistics apart from this can be used.",
@@ -256,7 +242,8 @@
       "JC": [],
       "teamsize": [1, 2],
       "mail": "fashion.sf22@gmail.com",
-      "subdoc": "the pdf file of your pictures and video"
+      "subdoc": "the pdf file of your pictures and video",
+      "mode":"Online"
     },
     { "name": "Nukkad",
       "about": "Exploiting the power of a street gathering, Nukkad or street plays have been the medium of the voice of the people from time immemorial. Now be a part of this tradition and strive to bring about change by taking part in Nukkad, one of the most acclaimed street play competitions in India. It is time to break barriers so clear your voices, get ready for the action, drum it up, folks and let your message ring out loud!",
@@ -274,7 +261,8 @@
       "JC": [],
       "teamsize": [6, 20],
       "mail": "dramatics.sf22@gmail.com",
-      "subdoc": "their video submission"
+      "subdoc": "their video submission",
+      "mode":"Offline"
     },
     { "name": "Hilarity Ensues",
       "about": "Since time immemorial, certain individuals have strived upon making their peers smile, chuckle, giggle and laugh. Spring Fest strives to celebrate all that is worth spreading joy in our world, and in the same spirit, we bring to you a spectacular event in the search for the next big name in Indian Comedy.",
@@ -290,7 +278,8 @@
       "JC": [],
       "teamsize": [1, 2],
       "mail": "",
-      "subdoc": ""
+      "subdoc": "",
+      "mode": "OfflineOnly"
     }
     ]
   }
