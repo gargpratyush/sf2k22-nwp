@@ -28,11 +28,5 @@ export const SidebarData=[
         path:'/Foot',
         icons:<FaIcons.FaPhone/>,
         CName:'nav-text'
-    },
-    {
-        title:'Know More',
-        path:'/Knowmore',
-        icons:<FaIcons.FaInfoCircle/>,
-        CName:'nav-text'
     }
 ]
