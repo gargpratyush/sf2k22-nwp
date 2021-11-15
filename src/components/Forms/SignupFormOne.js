@@ -128,6 +128,7 @@ export default function SignupFormOne(props) {
 
         control: (already, state) => ({
             ...already,
+            // marginTop: "-10px",
             cursor: 'text',
             width: '215px',
             transform: 'scaleY(0.80)', /* Equal to scaleX(0.7) scaleY(0.7) */
@@ -139,16 +140,16 @@ export default function SignupFormOne(props) {
                 backgroundColor: state.isFocused ? "#080e1c" : "#080e1c"
             }
         }),
-        placeholder: (already) => ({
-            ...already,
-            fontFamily: 'Poppins',
-            color: "#fff",
-            fontWeight: 'normal',
-            opacity: '75%',
-            fontSize: '15px',
-            transform: 'scaleY(1.25)',
-            justifyContent: 'center'
-        }),
+        // placeholder: (already) => ({
+        //     ...already,
+        //     fontFamily: 'Poppins',
+        //     color: "#fff",
+        //     fontWeight: 'normal',
+        //     opacity: '75%',
+        //     fontSize: '15px',
+        //     transform: 'scaleY(1.25)',
+        //     justifyContent: 'center'
+        // }),
         singleValue: (already) => ({
             ...already,
             fontFamily: 'Poppins',
@@ -199,18 +200,22 @@ export default function SignupFormOne(props) {
         >
             <Form >
                 <div className="RegistrationAll">
-                    <Field type="text" name="name" id="name" className="form-control Input" placeholder="Full Name" />
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px" }} >Full Name</label>
+                    <Field type="text" name="name" id="name" className="form-control Input"/>
                     <div className='RegistrationError'><ErrorMessage name='name' /></div>
                 </div>
                 <div className='RegistrationAll'>
-                    <Field type='email' id='email' name='email' className="form-control Input" placeholder='Email' />
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px" }} >Email</label>
+                    <Field type='email' id='email' name='email' className="form-control Input"/>
                     <div className='RegistrationError'><ErrorMessage name='email' /></div>
                 </div>
                 <div className='RegistrationAll'>
-                    <Field type='password' id='pass' name='pass' className="form-control Input" placeholder='Password' />
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px" }} >Password</label>
+                    <Field type='password' id='pass' name='pass' className="form-control Input" />
                     <div className='RegistrationError'><ErrorMessage name='pass' /></div>
                 </div>
                 <div className='RegistrationAll'>
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px" }} >Confirm Password</label>
                     <Field name='repass'>
                         {
                             (props) => {
@@ -228,7 +233,7 @@ export default function SignupFormOne(props) {
                                             name="repass"
                                             className="form-control Input"
                                             style={border}
-                                            placeholder='Confirm Password' />
+                                            />
                                         {(form.values.pass === form.values.repass) && (form.values.repass || form.values.pass) &&
                                             <i className="fa fa-check-circle" style={{ color: 'green', fontSize: '120%' }}></i>
                                         }
@@ -240,10 +245,12 @@ export default function SignupFormOne(props) {
                     <div className='RegistrationError'><ErrorMessage name='repass' /></div>
                 </div>
                 <div className='RegistrationAll'>
-                    <Field type='tel' id='phone' name='phone' className="form-control Input" placeholder='Mobile Number' />
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px" }} >Mobile Number</label>
+                    <Field type='tel' id='phone' name='phone' className="form-control Input"  />
                     <div className='RegistrationError'><ErrorMessage name='phone' /></div>
                 </div>
                 <div className='RegistrationAll'>
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px",marginTop:"2px",marginBottom:"-15px"}} >Date Of Birth</label>
                     <Field name='dob'>
                         {
                             ({ field, form }) => {
@@ -258,7 +265,7 @@ export default function SignupFormOne(props) {
                                         showYearDropdown
                                         fixedHeight
                                         id='dob'
-                                        placeholderText='Date of Birth'
+                                        style={{marginTop: "-10px"}}
                                     />
                                 )
                             }
@@ -271,6 +278,7 @@ export default function SignupFormOne(props) {
                         fontSize: '16px',
                         marginTop: '-3px'
                     }}>
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px" ,marginTop:"8px",marginBottom:"-15px"}} >Gender</label>
                     <Field name='gender' >
                         {
                             (props) => {
@@ -287,7 +295,6 @@ export default function SignupFormOne(props) {
                                                 form.setFieldValue(field.name, "")
                                         }}
                                         onBlur={field.onBlur(field.name)}
-                                        placeholder='Gender'
                                     />
                                 )
                             }
@@ -300,6 +307,7 @@ export default function SignupFormOne(props) {
                         fontSize: '16px',
                         marginTop: '-9px'
                     }}>
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px",marginTop:"10px",marginBottom:"-15px" , left: "2px"}} >City</label>
                     <Field name='city' >
                         {
                             (props) => {
@@ -317,7 +325,6 @@ export default function SignupFormOne(props) {
                                                 form.setFieldValue(field.name, "")
                                         }}
                                         onBlur={field.onBlur(field.name)}
-                                        placeholder='City'
                                     />
                                 )
                             }
@@ -326,6 +333,7 @@ export default function SignupFormOne(props) {
                     <div className='RegistrationError'><ErrorMessage name='city' /></div>
                 </div>
                 <div className='RegistrationAll' style={{ marginTop: '-4px' }}>
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px" }} >College</label>
                     <Field type='text' id='college' name='college' className="form-control Input" placeholder='College' />
                     <div className='RegistrationError'><ErrorMessage name='college' /></div>
                 </div>
@@ -334,7 +342,8 @@ export default function SignupFormOne(props) {
                         fontSize: '16px',
                         marginTop: '-4px'
                     }}>
-                    <Field name='yop'>
+                    <label style={{ color: "#fff", fontFamily: "Poppins", fontSize: "18px" ,marginTop:"10px",marginBottom:"-15px"}} >Year of Passing</label>
+                    <Field name='yop' >
                         {
                             (props) => {
                                 const { field, form } = props
@@ -350,7 +359,6 @@ export default function SignupFormOne(props) {
                                                 form.setFieldValue(field.name, "")
                                         }}
                                         onBlur={field.onBlur(field.name)}
-                                        placeholder='Year of Passing'
                                     />
                                 )
                             }

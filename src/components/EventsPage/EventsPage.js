@@ -208,6 +208,7 @@ function EventsPage(city) {
             <Link to="/eventspage/Nrityakala">
               <img src={Nrityakala} alt="Nrityakala" />
               <p style={{fontFamily: "RegularFont"}}>Nrityakala</p>
+              .
             </Link>
           </div>
 

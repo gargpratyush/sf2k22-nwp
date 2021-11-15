@@ -18,12 +18,13 @@ import FormsOne from '../Forms/FormsOne';
 const LandingPage = (props) => {
 
     const [isLogged, setIsLogged] = useState('data' in localStorage);
-
     return (
         <div className="return">
 
             <div className="landing-page">
-                <span className='menu-sth btnTopLandingPage' style={{ fontFamily: 'MediumFont' }}><FormsOne setIsLogged={setIsLogged} /></span>
+                {/* <span className='menu-sth btnTopLandingPage' style={{ fontFamily: 'MediumFont' }}>
+                    {(isLogged) ? <FormsOne setIsLogged={setIsLogged} /> : <FormsOne setIsLogged={setIsLogged} />}
+                </span> */}
                 <img src={text} alt="Hitch Hike" className='hitch-hike-txt' />
                 <img src={grass} alt="grass" className="landing_page_grass" />
                 <img src={unicorn} alt="unicorn" className="landing_page_unicorn" />

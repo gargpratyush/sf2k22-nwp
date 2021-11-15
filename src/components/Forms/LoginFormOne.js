@@ -94,11 +94,13 @@ export default function LoginFormOne(props) {
             {
                 <Form >
                     <div className='RegistrationAll'>
-                        <Field type="text" name="email" id="email" className="form-control Input" placeholder="Email" />
+                        <label style={{color:"#fff", fontFamily:"Poppins",fontSize:"18px",paddingTop:"-100px" }} >Email</label>
+                        <Field type="text" name="email" id="email" className="form-control Input"  />
                         <div className='RegistrationError'> <ErrorMessage name='email' /></div>
                     </div>
                     <div className='RegistrationAll'>
-                        <Field type="password" name="pass" id="pass" className="form-control Input" placeholder="Password " />
+                        <label  style={{color:"#fff", fontFamily:"Poppins",fontSize:"18px" }} >Password</label>
+                        <Field type="password" name="pass" id="pass" className="form-control Input" />
                         <div className='RegistrationError'><ErrorMessage name='pass' /></div>
                     </div>
                     <Marginer direction="vertical" margin={40} />

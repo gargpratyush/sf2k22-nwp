@@ -63,6 +63,7 @@ cursor: pointer;
   font-family: Poppins;
   background-color: #080e1c !important;
   color: #fff !important;
+  margin-top: -6px;
   /* padding-top:5px !important;
   padding-bottom: 5px !important; */
 }
@@ -73,6 +74,7 @@ cursor: pointer;
   border-radius: 200px !important;
   opacity: 75%;
 }
+
 
 
 .captchae {
