@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/NWP-22-AlmostDone/static/css/main.1fd43259.chunk.css",
+    "main.css": "/NWP-22-AlmostDone/static/css/main.e99d7b9a.chunk.css",
     "main.js": "/NWP-22-AlmostDone/static/js/main.4bb3bd4d.chunk.js",
     "main.js.map": "/NWP-22-AlmostDone/static/js/main.4bb3bd4d.chunk.js.map",
     "runtime-main.js": "/NWP-22-AlmostDone/static/js/runtime-main.582ddcdc.js",
@@ -12,7 +12,7 @@
     "static/js/3.9f41fc7b.chunk.js.map": "/NWP-22-AlmostDone/static/js/3.9f41fc7b.chunk.js.map",
     "index.html": "/NWP-22-AlmostDone/index.html",
     "static/css/2.137b36b6.chunk.css.map": "/NWP-22-AlmostDone/static/css/2.137b36b6.chunk.css.map",
-    "static/css/main.1fd43259.chunk.css.map": "/NWP-22-AlmostDone/static/css/main.1fd43259.chunk.css.map",
+    "static/css/main.e99d7b9a.chunk.css.map": "/NWP-22-AlmostDone/static/css/main.e99d7b9a.chunk.css.map",
     "static/js/2.02acee4b.chunk.js.LICENSE.txt": "/NWP-22-AlmostDone/static/js/2.02acee4b.chunk.js.LICENSE.txt",
     "static/media/EnglishPoetry.665b120c.png": "/NWP-22-AlmostDone/static/media/EnglishPoetry.665b120c.png",
     "static/media/HindiPoetry.82dc75e0.png": "/NWP-22-AlmostDone/static/media/HindiPoetry.82dc75e0.png",
@@ -91,7 +91,7 @@
     "static/js/runtime-main.582ddcdc.js",
     "static/css/2.137b36b6.chunk.css",
     "static/js/2.02acee4b.chunk.js",
-    "static/css/main.1fd43259.chunk.css",
+    "static/css/main.e99d7b9a.chunk.css",
     "static/js/main.4bb3bd4d.chunk.js"
   ]
 }
