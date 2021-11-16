@@ -351,7 +351,7 @@ const Map = (props) => {
                                 <Link to="/eventspage">
                                 <div className="desktop_grid_child" onClick={() => {
                                 props.setCity(leftCity);
-                                localStorage.setItem("quentinTarantino",JSON.stringify(leftCity));
+                                localStorage.setItem("currentState",JSON.stringify(leftCity));
                             }}>
                                     {leftCity.name}
                                 </div>
@@ -369,7 +369,7 @@ const Map = (props) => {
                             <Link to="/eventspage">
                             <div id={`pin ${city.id}`} onClick={() => {
                                 props.setCity(city);
-                                localStorage.setItem("quentinTarantino",JSON.stringify(city));
+                                localStorage.setItem("currentState",JSON.stringify(city));
                             }} className="pin" style={{ left: city['pinx'], top: city['piny'] }}>
                                 <svg className="svgPinClass" xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 512 512" viewBox="0 0 512 512">
                                     <path fill="" fillRule="evenodd" d="M457.457,440.463C457.457,475.554,367.262,504,256,504c-111.262,0-201.457-28.446-201.457-63.537
@@ -401,7 +401,7 @@ const Map = (props) => {
                                 <Link to="/eventspage">
                                 <div className="desktop_grid_child" onClick={() => {
                                 props.setCity(leftCity);
-                                localStorage.setItem("quentinTarantino",JSON.stringify(leftCity));
+                                localStorage.setItem("currentState",JSON.stringify(leftCity));
                             }}>
                                     {leftCity.name}
                                 </div>
@@ -493,7 +493,7 @@ const Map = (props) => {
                                                     <Link to="/eventspage"> 
                                                     <button class="button-57" onClick={() => {
                                 props.setCity(c);
-                                localStorage.setItem("quentinTarantino",JSON.stringify(c));
+                                localStorage.setItem("currentState",JSON.stringify(c));
                             }}>
                                                         <span class="text">Go to Events Page</span>
                                                     </button> </Link>

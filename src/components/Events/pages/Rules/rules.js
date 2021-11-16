@@ -29,27 +29,29 @@ const useStyles = makeStyles({
 const Rules = (props) => {
  const classes = useStyles();
   // let eventName = props.name
-  let rulesList=props.rules;
+  let rulesList=props.rules; 
   if(props.mode=="Online")
   rulesList=props.rules;
-  else
-  rulesList=props.offlinerules;
+  else{
+    rulesList = (props.offlinecities.find(cityname => cityname == props.city))?props.offlinerules:props.rules;
+  }
 
 
   return (
     <div className="judgement-wrapper">
       <Card className="content-box effect-h1" style={{backgroundColor:"#2326309f" ,color:"white" , textAlign: "left" }}>
         <h1 className="hover hover-1">Rules</h1>
-        {/* <ul className={classes.list}>
+        <ul className={classes.list}>
         {rulesList.map(rule => (
           <li>{rule}</li>
         ))}
         </ul>
+        <p>There is no theme for prelims. The theme for the final round shall be released online two weeks before the event.
+        </p>
         <p>
         The decision of judges and organizers will be final and binding in case of any conflict. Spring Fest reserves the right to change or modify any of these rules.</p>
-        <p>There is no theme for prelims. The theme for the final round shall be released online two weeks before the event.
-        </p> */}
-        <p>You will be notified soon.</p>
+        
+        {/* <p>You will be notified soon.</p> */}
       </Card>
     </div>
   )
