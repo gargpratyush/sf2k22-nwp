@@ -269,7 +269,7 @@ stroke: black;
     display: grid;
     width: 0em;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: space-around;
     grid-template-columns: auto auto;
     margin: 5em;
@@ -295,7 +295,7 @@ stroke: black;
     /* background: #e0e5ec; */
     height: 2.7rem;
     width: 18rem;
-    margin: 2.2rem;
+    margin: 1.4rem;
     border-radius: 7px;
     display: flex;
     justify-content: center;
@@ -525,8 +525,8 @@ stroke: black;
 } */
 @media screen and (max-width: 400px){
   .grid_child{
-    width: 7rem;
-    font-size: 0.87rem;
+    width: 8.6rem;
+    font-size: 0.89rem;
   }
   .mobile_grid_container{
     grid-template-columns: 150px 150px; 
@@ -538,6 +538,11 @@ stroke: black;
     font-size: 1.25rem;
   }
 
+}
+@media only screen and (max-width: 330px){
+  .grid_child{
+    margin: 0.2em;
+  }
 }
 @media screen and (min-width: 500px){
   .grid_child{
