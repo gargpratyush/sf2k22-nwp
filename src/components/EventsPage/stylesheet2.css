@@ -9,13 +9,13 @@
   font-weight: thin;
 }
 @font-face {
-  font-family: RegularFont !important;
-  src: url("Font/Poppins-Regular.ttf");
+  font-family: Poppins !important;
+  src:url("./Font/Poppins-Regular.ttf");
   font-weight: normal;
 }
 
 body {
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins";
     font-weight: normal;
     font-size: 1.5rem;
     background: #efecdb;
@@ -53,6 +53,7 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     margin-left: -20vh;
+    font-family: "Poppins";
   }
 
   .img-wrapper {
