@@ -220,7 +220,7 @@ function Signup(props) {
       >
         {({ errors, values, touched, setValues }) => {
           // console.log("values", values)
-          return (<div>
+          return (<div className="judgement-wrapper">
             <Card className="content-box  effect-h1" style={{ backgroundColor: "#2326309f", color: "white" }}>
               <span>
               <Form>
@@ -307,7 +307,7 @@ function Signup(props) {
     )
   }
   else if (!isLogged) {
-    return (<div>
+    return (<div className="judgement-wrapper">
       <Card className="content-box  effect-h1" style={{backgroundColor:"#2326309f" ,color:"white"  }}>
         <div>
           <h1 className="hover hover-1" style={{textAlign: "center"}} >Register for {props.name} </h1>
@@ -320,7 +320,7 @@ function Signup(props) {
     // <h2 className="alreadyReg"></h2>
   }
   else if (reged && isLogged) {
-    return (<div>
+    return (<div className="judgement-wrapper">
       <Card className="content-box  effect-h1" style={{backgroundColor:"#2326309f" ,color:"white"  }}>
         <div>
           <h1 className="hover hover-1" style={{textAlign: "center"}}>Register for {props.name}</h1>

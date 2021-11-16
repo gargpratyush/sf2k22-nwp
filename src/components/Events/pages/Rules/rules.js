@@ -37,8 +37,8 @@ const Rules = (props) => {
 
 
   return (
-    <div>
-      <Card className="db-content-box db-effect-h1" style={{backgroundColor:"#2326309f" ,color:"white" , textAlign: "left" }}>
+    <div className="judgement-wrapper">
+      <Card className="content-box effect-h1" style={{backgroundColor:"#2326309f" ,color:"white" , textAlign: "left" }}>
         <h1 className="hover hover-1">Rules</h1>
         <ul className={classes.list}>
         {rulesList.map(rule => (
