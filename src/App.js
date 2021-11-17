@@ -104,7 +104,7 @@ function App() {
   // const [event, setEvent] = useState();
 
   const [city,setCity] = useState({});
-  const retrievedData = localStorage.getItem("quentinTarantino");
+  const retrievedData = localStorage.getItem("currentState");
   const city2 = JSON.parse(retrievedData);
 
   const [event, setEvent] = useState();

@@ -40,48 +40,56 @@ const Judgement = (props) => {
   //       getSubmission();
   //     }
   //   }
+
+  let isOffline;
+
+  if(props.mode=="Online")
+  isOffline=false;
+  else{
+    isOffline = (props.offlinecities.find(cityname => cityname == props.city))?true:false;
+  }
+
   let subElem = <></>;
-  subElem = <p>You will be notified soon.</p>
-  // if(props.mode=="Online"){
-  //    subElem=(
-  //     <>
-  //     <ul>
-  //       {/*
-  //         judgement[eventName].map((item, i) => (
-  //           <li key={i}>
-  //             <span className="padd">{item[0]}</span><span>{item[1]}</span>
-  //           </li>
-  //         ))
-  //       */}
-  //       <li key='1'>
-  //           Mail the pdf format of your picture tale to "{props.mail}". The format of the mail is mentioned below:
-  //           <br/>Subject - HITCH HIKE || {props.name.toUpperCase()}
-  //           <br/>Mail body: {"{"}
-  //           <br/><span className="submit-tab">Name:</span>
-  //           <br/><span className="submit-tab">Contact Number:</span>
-  //           <br/><span className="submit-tab">College Name:</span>
-  //           <br/><span className="submit-tab">City:</span>
-  //           <br/><span className="submit-tab">SF ID:</span>
-  //           <br/>{"}"}
-  //       </li>
-  //       <li ley='2'>
-  //         Top entries shall be published from the official Spring Fest Instagram handle as well as our website.
-  //         <ul>
-  //           <li>Post your entry on your instagram account, your account should be public.</li>
-  //           <li>Participants need to tag @iitkgp.springfest in the post.</li>
-  //           <li>The hashtags #sf2k22 and #Hitchhike need to be used in the caption.</li>
-  //         </ul>
-  //       </li>
-  //     </ul></>
-  //   )}
-  //   else{
-  //     subElem=(
-  //         <ul style={{listStyleType:"none", textAlign: "center"}}>
-  //           <li>The Events will be held offline here</li>
-  //           <li>You will be notified soon.</li>
-  //         </ul>
-  //       ) 
-  //   }
+  if(!isOffline){
+     subElem=(
+      <>
+      <ul>
+        {/*
+          judgement[eventName].map((item, i) => (
+            <li key={i}>
+              <span className="padd">{item[0]}</span><span>{item[1]}</span>
+            </li>
+          ))
+        */}
+        <li key='1'>
+            Mail the pdf format of your picture tale to "{props.mail}". The format of the mail is mentioned below:
+            <br/>Subject - HITCH HIKE || {props.name.toUpperCase()}
+            <br/>Mail body: {"{"}
+            <br/><span className="submit-tab">Name:</span>
+            <br/><span className="submit-tab">Contact Number:</span>
+            <br/><span className="submit-tab">College Name:</span>
+            <br/><span className="submit-tab">City:</span>
+            <br/><span className="submit-tab">SF ID:</span>
+            <br/>{"}"}
+        </li>
+        <li ley='2'>
+          Top entries shall be published from the official Spring Fest Instagram handle as well as our website.
+          <ul>
+            <li>Post your entry on your instagram account, your account should be public.</li>
+            <li>Participants need to tag @iitkgp.springfest in the post.</li>
+            <li>The hashtags #sf2k22 and #Hitchhike need to be used in the caption.</li>
+          </ul>
+        </li>
+      </ul></>
+    )}
+    else{
+      subElem=(
+          <ul style={{listStyleType:"none", textAlign: "center"}}>
+            <li>The events will be held offline here</li>
+            <li>You will be notified soon.</li>
+          </ul>
+        ) 
+    }
   
   
   return (

@@ -41,15 +41,16 @@ const Dashboard = (props) => {
   const regevs = (props.auth) ? Object.keys(JSON.parse(localStorage.getItem('reg_events'))) : []
   const evs = (props.auth) ? JSON.parse(localStorage.getItem('events')) : {}
   const [reged, setReged] = useState((props.auth) ? regevs.includes(String(evs[props.name])) : false)
+  const currCity = ("currentState" in localStorage)?JSON.parse(localStorage.getItem("currentState")).name:"";
 
   const renderComp = () => {
     switch (props.comp) {
       case "abt":
         return (<About about={props.content.about} name={props.content.name} />);
       case "Rules":
-        return (<Rules rules={props.content.rules} offlinerules={props.content.offlinerules} mode={props.content.mode} />);
+        return (<Rules rules={props.content.rules} offlinerules={props.content.offlinerules} mode={props.content.mode} offlinecities={props.content.cities} city={currCity} />);
       case "Sub":
-        return (<Judgement name={props.content.name} mail={props.content.mail} mode={props.content.mode} />);
+        return (<Judgement name={props.content.name} mail={props.content.mail} mode={props.content.mode} offlinecities={props.content.cities} city={currCity} />);
       case "Reg":
         return (<Register name={props.content.name} />);
       default:

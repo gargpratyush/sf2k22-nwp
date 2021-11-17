@@ -48,7 +48,17 @@
       "teamsize": [1, 1],
       "mail": "dramatics.sf@gmail.com",
       "subdoc": "your video entry",
-      "mode": "Offline"
+      "mode": "Offline",
+      "cities":
+      ["Chandigarh", 
+        "Delhi",
+        "Mumbai",
+        "Kolkata",
+        "Pune",
+        "Bhubaneswar",
+        "Banglore",
+        "Hyderabad"]
+      
     },
     { "name" : "English Poetry Slam",
       "about": "One of the events of the fest, which involves the combined art of story-telling, stand-up and poetry writing",
