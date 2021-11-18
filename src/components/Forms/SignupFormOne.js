@@ -63,7 +63,7 @@ export default function SignupFormOne(props) {
             axios.post('https://mainapi.springfest.in/api/user/register_user', req).then((resp) => {
                 const data = resp.data
                 if (data.code === 0) {
-                    toast.success('Successfully registered. Now go to login page.', { position: toast.POSITION.TOP_CENTER });
+                    toast.success('Successfully registered. You can now register for events.', { position: toast.POSITION.TOP_CENTER });
                     props.setModal(false);
                     props.setLogged(true);
                     resetForm({ values: " " });
