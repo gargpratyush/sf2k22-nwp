@@ -42,7 +42,7 @@ export default function SignupFormOne(props) {
     }
     const onSubmitValues = (values, { resetForm }) => {
         if (values.verify) {
-            for (var i = 0; i < 12; i++) {
+            for (var i = 0; i < 14; i++) {
                 if (values.city === cities[i].value)
                     values.state = states[i].value;
             }
