@@ -54,7 +54,7 @@ const eventsObj = {
   'Paint It': 35,
   'Panache': {
     id: 41,
-    teamsize: [1, 2],
+    teamsize: [1, 1],
   },
   'Rangmanch': 14,
   'Rapmania': 77,
