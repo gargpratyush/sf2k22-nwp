@@ -10,7 +10,7 @@ import '../About/about.css';
 const axios = require('axios')
 const data = ('data' in localStorage) ? JSON.parse(localStorage.getItem('data')) : [] ;
 const events = require("../../../Services/data.json")
-var regevs = (('reg_events' in localStorage) ? localStorage.getItem('reg_events') : [] );
+var regev = (('reg_events' in localStorage) ? localStorage.getItem('reg_events') : [] );
 
 const eventsObj = {
   'A Mighty Pen': 17,
@@ -80,16 +80,20 @@ const eventsObj = {
 localStorage.setItem("events", JSON.stringify(eventsObj))
 
 function Signup(props) {
-  console.log("props", props)
+  // console.log("props", props)
   const eventsid = ('events' in localStorage) ? JSON.parse(localStorage.getItem("events")) : [] ;
+   regev = (('reg_events' in localStorage) ? localStorage.getItem('reg_events') : [] );
   // console.log(eventsid)
   const eventName = props.name
   const formRef = useRef()
   const [smin, smax] = eventsObj[eventName].teamsize;
-  console.log("smin", smin);
-  console.log("smax",smax);
+  // console.log("smin", smin);
+  // console.log("smax",smax);
   const [isLogged, setLogged] = useState('data' in localStorage);
-  const [reged, setReged] = useState((isLogged) ? ((regevs.includes(String(props.name)) ? true : false)) : false);
+  console.log("regev",regev);
+  const [reged, setReged] = useState((isLogged) ? ((regev.includes(String(props.name)) ? true : false)) : false);
+  console.log("reged",reged);
+ console.log("isLogged",isLogged);
  
   var opt = []
   for (var i = smin; i <= smax; i++) opt.push(i)
@@ -133,8 +137,8 @@ function Signup(props) {
   }
 
   function onSubmit(values) {
-    console.log("ab")
-    console.log('form values', values)
+    // console.log("ab")
+    // console.log('form values', values)
     var token1 = data.token;
     var event_reg = [{ sf_id: data.sf_id , email: "abc@gmail.com" }];
     for (var i = 1; i < values.numberOfMembers; i++) {
@@ -156,13 +160,12 @@ function Signup(props) {
     //     })
     // const token1=data.token
         const req={
-
           event_id: eventsObj[eventName].id,
           // token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEyODk0LCJpc3MiOiJodHRwczovL21haW5hcGkuc3ByaW5nZmVzdC5pbi9hcGkvdXNlci9sb2dpbi9wYXNzd29yZCIsImlhdCI6MTYzNTkyODI2MywiZXhwIjoxNjM1OTMxODYzLCJuYmYiOjE2MzU5MjgyNjMsImp0aSI6IkMyZ0JkZ1Nhc1Rtbm5QaG0ifQ.mHoTu9ZXilg7-3yrThDJbCWoIcpbZfsuYOX3CP4YAQ8",
           token: data.token,
           event_reg: event_reg
         }
-        console.log("req",req)
+        // console.log("req",req)
         axios.post("https://mainapi.springfest.in/api/event/register", req).then((resp) => {
           console.log("resp.data", resp.data)
           if (resp.data.code === 0) {
@@ -198,7 +201,9 @@ function Signup(props) {
                 }
               }
               localStorage.setItem('reg_events', JSON.stringify(regevs))
-              props.setReged(true)
+              console.log("props setReged", props)
+              console.log("Regevs",regevs)
+              setReged(true)
             }).catch((err) => {
               console.log(err)
             })
