@@ -85,7 +85,7 @@ import FormsOne from './components/Forms/FormsOne'
 // import Navbar from "./components/Navbar/Navindex";
 import Navbar from './components/Navbar/Navbar';
 import Map from './components/Map/Map';
-import Footer from './components/Footerpage/Footer';
+import Footer from './components/Contactus/Footer';
 import eventData from './components/Services/data.json';
 import ProfileDash from './components/ProfileDash/ProfileDash';
 import Knowmore from './components/Knowmore/Knowmore';
