@@ -3,7 +3,8 @@ import './landingPage.css';
 import text from './hitch-hike-txt.png';
 import MapApp from '../Map/MapApp.js';
 import GallerySlider from '../Gallerypage/GallerySlider';
-import Footer from '../Footerpage/Footer';
+//import Footer from '../Footerpage/Footer';
+import Contactus from '../Contactus/Footer';
 import grass from './grass.png';
 import unicorn from './unicorn.png';
 import woman from './woman.png';
@@ -48,7 +49,8 @@ const LandingPage = (props) => {
 
 
             <div >
-                <Footer />
+
+                    <Contactus/>
             </div>
 
         </div>
