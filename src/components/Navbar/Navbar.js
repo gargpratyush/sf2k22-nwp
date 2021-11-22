@@ -8,6 +8,7 @@ import { IconContext } from 'react-icons';
 import FormsOne from '../Forms/FormsOne';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import logo1 from './logo1.png'
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -44,10 +45,19 @@ function Navbar() {
                 </li>
               );
             })}
+            <div>
+            
+            {/* <span className='menu-sth' style={{fontFamily:'MediumFont'}}>
+            <FormsOne setIsLogged={setIsLogged} /></span> */}
             <span className='menu-sth' style={{ fontFamily: 'MediumFont' }}>
             <FormsOne isLogged={isLogged} setIsLogged={setIsLogged} /> 
             <ToastContainer />
             </span>
+            <a target="_blank" href="https://www.facebook.com/springfest.iitkgp" className="sficon1">
+            <img src={logo1} className="sficon1" alt="India Map"  />
+            </a>
+           </div>
+            
           </ul>
         </nav>
       </IconContext.Provider>

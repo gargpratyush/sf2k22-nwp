@@ -3,7 +3,17 @@
   src: url("Poppins/Poppins-Medium.ttf");
   font-weight: bolder;
 }
-
+.sficon1 {
+  /* transition:ease-in; */
+  transition-duration: 1.5s;
+ }
+ 
+ .sficon1:hover {
+   transform: scale(1.1);
+   box-shadow: white;
+   transform: rotateZ(360deg);
+   /* transform: rotate3d(0, 1, 0.5, 3.142rad); */
+ }
 .navbar {
     background-color: transparent;
     display: flex;
@@ -84,6 +94,9 @@
     margin-left: 16px;
   }
   @media screen and (max-width:600px){
+    .sficon1 {
+      visibility: hidden;
+    }
     .nav-menu{
         width:240px;
     }
