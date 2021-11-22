@@ -16,7 +16,7 @@ const AboutPage = (props) => {
       eid={regev}
       refresh={refresh}
       setRefresh={setRefresh}
-    />)):<div style={{fontSize: "larger"}}>You haven't registered for any events yet.</div>)
+    />)):<div style={{fontSize: "larger", textAlign: "center"}}>You haven't registered for any events yet.</div>)
   if (refresh) {
     regevs = JSON.parse(localStorage.getItem('reg_events'));
      if (regevs != undefined) {

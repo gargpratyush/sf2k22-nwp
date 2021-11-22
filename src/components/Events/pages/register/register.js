@@ -93,6 +93,7 @@ const eventsObj = {
 localStorage.setItem("events", JSON.stringify(eventsObj))
 
 function Signup(props) {
+  const data = ('data' in localStorage) ? JSON.parse(localStorage.getItem('data')) : [] ;
   // console.log("props", props)
   const eventsid = ('events' in localStorage) ? JSON.parse(localStorage.getItem("events")) : [] ;
    regev = (('reg_events' in localStorage) ? localStorage.getItem('reg_events') : [] );
@@ -151,7 +152,7 @@ function Signup(props) {
 
   function onSubmit(values) {
     // console.log("ab")
-    // console.log('form values', values)
+    console.log('form values', values)
     var token1 = data.token;
     var event_reg = [{ sf_id: data.sf_id , email: "abc@gmail.com" }];
     for (var i = 1; i < values.numberOfMembers; i++) {
@@ -178,7 +179,7 @@ function Signup(props) {
           token: data.token,
           event_reg: event_reg
         }
-        // console.log("req",req)
+        console.log("req",req)
         axios.post("https://mainapi.springfest.in/api/event/register", req).then((resp) => {
           console.log("resp.data", resp.data)
           if (resp.data.code === 0) {
@@ -190,7 +191,7 @@ function Signup(props) {
               console.log("resp2", resp2)
               const msg = resp2.data.message
               const keys = Object.keys(msg)
-              console.log(msg)
+              // console.log(msg)
               var regevs = {}
               for (var i = 0; i < keys.length; i++) {
                 var evs = msg[keys[i]]
@@ -209,7 +210,8 @@ function Signup(props) {
                       name: evs[j].event_name,
                       members: evs[j].members,
                       iscert: evs[j].is_cert.is_cert,
-                      leadersfid: evs[j].leader_id.leader_id
+                      // leadersfid: evs[j].leader_id.leader_id
+                      leadersfid: data.sf_id
                     }
                 }
               }

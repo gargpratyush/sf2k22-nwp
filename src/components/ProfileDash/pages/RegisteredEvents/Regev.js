@@ -15,9 +15,9 @@ const Regev = (props) => {
   const sfid = data.sf_id;
   const type = regevs[String(props.eid)].type;
   const name = regevs[String(props.eid)].name;
-  const mem = eventList.events.find(eventItem => eventItem.name === name).teamsize;
+  const mem = eventList.events.find(eventItem => eventItem.name === name).teamsize; 
   const grpid = (type === 'group') ? regevs[String(props.eid)].group_id : "";
-  const leadersfid = (type === 'group') ? "NWP".concat(String(regevs[String(props.eid)].leadersfid)) : "";
+  const leadersfid = (type === 'group') ? String(regevs[String(props.eid)].leadersfid) : "";
   const members = (type === 'group') ? regevs[String(props.eid)].members.map((m) => m.member_name) : null;
 
   const dereg_team = () => {
@@ -140,10 +140,10 @@ const Regev = (props) => {
             {members.map((mem) => <li>{mem}</li>)}
           </ol>
           {/* {((sfid === leadersfid) && (members.length < mem[1])) ? <button class="event-button" onClick={() => {setAddMem(true)}}>+ Add Members</button> : ""} */}
-          {(sfid === leadersfid) ? <button class="event-button" onClick={()=>{dereg_team()}}>Deregister Team</button> : ""}
-          {((sfid !== leadersfid) && (members.length > mem[0])) ? <button onClick={()=>{dereg_mem("group")}}>Leave Group</button> : ""}
+          {(sfid === leadersfid) ? <button className="event-button" onClick={()=>{dereg_team()}}>Deregister Team</button> : ""}
+          {((sfid !== leadersfid) && (members.length > mem[0])) ? <button className="event-button" onClick={()=>{dereg_mem("group")}}>Leave Group</button> : ""}
         </div>) :
-        <button class="event-button" onClick={() => {dereg_mem("solo")}} >Deregister</button>
+        <button className="event-button" onClick={() => {dereg_mem("solo")}} >Deregister</button>
       }
       {/* <AddMember 
         name={name} 
