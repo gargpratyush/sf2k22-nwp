@@ -89,3 +89,23 @@ cursor: pointer;
 .Toastify__toast-container{
   z-index: 9999999999;
 }
+
+.example {
+
+  width: 300px;
+
+  min-height: 540px;
+
+  max-height: 548px;
+
+  overflow: scroll;
+
+ }
+
+.example::-webkit-scrollbar {
+
+  display: none;
+
+  width: 0%;
+
+ }

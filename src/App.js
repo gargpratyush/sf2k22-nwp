@@ -127,7 +127,7 @@ function App() {
           <Route exact path="/Citymap">
             <Map setCity={setCity} />
           </Route>
-          <Route exact path="/Foot">
+          <Route exact path="/Contact">
             <Footer />
           </Route>
           <Route exact path="/Knowmore">

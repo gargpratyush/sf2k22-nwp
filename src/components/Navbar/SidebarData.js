@@ -25,7 +25,7 @@ export const SidebarData=[
     },
     {
         title:'Contact Us',
-        path:'/Foot',
+        path:'/Contact',
         icons:<FaIcons.FaPhone/>,
         CName:'nav-text'
     }

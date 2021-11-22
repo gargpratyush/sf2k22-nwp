@@ -9,6 +9,7 @@ import img from '../Map/images/background.png';
 import Modal from 'react-modal';
 import zIndex from '@material-ui/core/styles/zIndex';
 import { ToastContainer, toast } from 'react-toastify';
+import "./FormsOne.css";
 
 Modal.setAppElement('body');
 
@@ -143,14 +144,15 @@ export default function AccountBox(props) {
         <AccountContext.Provider value={contextValue}>
             <Modal isOpen={props.isOpen}
                 onRequestClose={() => props.setModal(false)}
+                className="example"
                 style={{
                     content:
                     {
-                        position: "absolute",
+                        position: "relative",
                         top: "50%",
                         left: "50%",
                         transform: "translate(-50%, -50%)",
-                        width: "340px",
+                        width: "300px",
                         minHeight: "540px",
                         display: "inline-block",
                         flex: "auto",
