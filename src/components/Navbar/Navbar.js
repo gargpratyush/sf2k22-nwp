@@ -24,7 +24,7 @@ function Navbar() {
             <FaIcons.FaBars onClick={() => setSidebar(true)} />
           </Link>
         </div>
-        <span className='menu-sth btnTopLandingPage' style={{ fontFamily: 'MediumFont' }}>
+        <span className='menu-sth btnTopLandingPage lpButton' style={{ fontFamily: 'MediumFont' }}>
           <FormsOne isLogged={isLogged} setIsLogged={setIsLogged} /> 
         </span>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

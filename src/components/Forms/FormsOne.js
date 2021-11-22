@@ -31,7 +31,8 @@ export default function FormsOne(props) {
                             borderRadius: '10px',
                             color: 'white',
                             padding: '10px',
-                            marginBottom: '20px'
+                            marginBottom: '20px',
+                            marginTop:'20px'
                         }}
                         onClick={() => setModal(true)}>
                         Sign In / Sign Up
@@ -44,7 +45,8 @@ export default function FormsOne(props) {
                             borderRadius: '10px',
                             color: 'white',
                             padding: '10px',
-                            marginBottom: '20px'
+                            marginBottom: '20px',
+                            marginTop:'20px'
                         }}
                         onClick={() => {
                             props.setIsLogged(false)

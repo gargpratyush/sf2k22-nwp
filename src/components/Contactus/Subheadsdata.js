@@ -68,7 +68,7 @@ export const Subheadsdata=[
         title:'Somya',
     // 
         // fb:'https://www.facebook.com/ambika.garg.338',
-        linkedin:'https://www.facebook.com/somya.gupta.5895',
+        linkedin:'https://www.linkedin.com/in/somya-gupta-7062a2223',
     },
     {
         title:'Suraj',
