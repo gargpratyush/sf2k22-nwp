@@ -93,7 +93,7 @@ const Judgement = (props) => {
     subElem=(
       <ul style={{listStyleType:"none", textAlign: "center"}}>
         {/* <li>The events will be held offline here</li> */}
-        <li>You will be notified soon.</li>
+        <li style={{fontSize:"1.2rem"}}>You will be notified soon.</li>
       </ul>
     )
   

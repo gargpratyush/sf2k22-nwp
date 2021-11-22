@@ -46,7 +46,7 @@ const Rules = (props) => {
           <li>{rule}</li>
         ))}
         </ul> */}
-        <p>You will be notified soon.
+        <p style={{fontSize:"1.2rem", textAlign: "center" }} >You will be notified soon.
         </p>
         {/* <p>
         The decision of judges and organizers will be final and binding in case of any conflict. Spring Fest reserves the right to change or modify any of these rules.</p> */}

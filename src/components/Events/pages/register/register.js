@@ -32,6 +32,10 @@ const eventsObj = {
     id:67,
     teamsize:[1,1]
   },
+  'Hilarity Ensues':{
+    id:81,
+    teamsize:[1,1]
+  },
   'I Me Myself': {
     id: 16,
     teamsize: [1, 1]
@@ -51,6 +55,10 @@ const eventsObj = {
     id: 76,
     teamsize: [1, 1]
   },
+  'Nukkad':{
+    id:80,
+    teamsize:[6,20]
+  },
   'Paint It': 35,
   'Panache': {
     id: 41,
@@ -68,6 +76,10 @@ const eventsObj = {
     id: 1,
     teamsize: [1, 1],
   },
+  'Shuffle':{
+    id: 79,
+    teamsize:[4,10],
+  },
   'Sketch It': 36,
   'SpEnt': 44,
   'Stash N Show': 71,
@@ -76,6 +88,7 @@ const eventsObj = {
     id: 5,
     teamsize: [2, 2],
   },
+  
 }
 localStorage.setItem("events", JSON.stringify(eventsObj))
 
@@ -90,10 +103,10 @@ function Signup(props) {
   // console.log("smin", smin);
   // console.log("smax",smax);
   const [isLogged, setLogged] = useState('data' in localStorage);
-  console.log("regev",regev);
+  // console.log("regev",regev);
   const [reged, setReged] = useState((isLogged) ? ((regev.includes(String(props.name)) ? true : false)) : false);
-  console.log("reged",reged);
- console.log("isLogged",isLogged);
+//   console.log("reged",reged);
+//  console.log("isLogged",isLogged);
  
   var opt = []
   for (var i = smin; i <= smax; i++) opt.push(i)
@@ -201,8 +214,8 @@ function Signup(props) {
                 }
               }
               localStorage.setItem('reg_events', JSON.stringify(regevs))
-              console.log("props setReged", props)
-              console.log("Regevs",regevs)
+              // console.log("props setReged", props)
+              // console.log("Regevs",regevs)
               setReged(true)
             }).catch((err) => {
               console.log(err)
@@ -318,7 +331,7 @@ function Signup(props) {
           <h1 className="hover hover-1" style={{textAlign: "center"}} >Register for {props.name} </h1>
         </div>
         <ul>
-          <h3 style={{textAlign: "center"}}>You need to login first to register for this event. </h3>
+          <p style={{textAlign: "center", fontSize:"1.2rem"}}>You need to login first to register for this event. </p>
         </ul>
       </Card></div>
     )
@@ -331,7 +344,7 @@ function Signup(props) {
           <h1 className="hover hover-1" style={{textAlign: "center"}}>Register for {props.name}</h1>
         </div>
         <ul>
-          <h2 style={{textAlign: "center"}}> You have already registered for this event. </h2>
+          <p  style={{textAlign: "center", fontSize:"1.2rem"}}> You have already registered for this event. </p>
         </ul>
       </Card></div>
     )

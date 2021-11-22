@@ -15,7 +15,7 @@ const AboutPage = (props) => {
         <h1 className="hover hover-1" style={{textAlign:"center"}}>About {props.name}</h1>
       </div>
       <ul  style={{textAlign:"center"}}>
-        <p>{props.about}</p>
+        <p style={{fontSize:"1.1rem"}}>{props.about}</p>
       </ul>
     </Card>
     </div>
