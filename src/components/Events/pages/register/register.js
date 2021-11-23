@@ -209,8 +209,8 @@ function Signup(props) {
                       type: keys[i],
                       name: evs[j].event_name,
                       members: evs[j].members,
-                      iscert: evs[j].is_cert.is_cert,
-                      // leadersfid: evs[j].leader_id.leader_id
+                      iscert: evs[j].is_cert,
+                      // leadersfid: evs[j].leader_id
                       leadersfid: data.sf_id
                     }
                 }
